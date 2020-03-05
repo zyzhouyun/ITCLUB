@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Win10 Ui</title>
+    <link th:href="@{/css/css.css}" rel="stylesheet" type="text/css">
+    <script src="./dist/js/main.min.js"></script>
+</head>
+
+<body>
+    <div class="public_box">
+        <h1 class="title">
+            <strong>博客审核</strong>
+<!--            <span>-->
+<!--                <a class="button-normal button-search" href="#">用户列表</a>-->
+<!--            </span>-->
+        </h1>
+        <div class="tabBox">
+            <div class="tabTitle">
+                <div class="tabWrap">
+                    <span class="tabBtn tabActive">审核说明</span>
+                </div>
+            </div>
+            <div class="tabBody mb10">
+                <div class="bodyLi bodyActive">
+                    <div class="win-input mb10">
+                        <span class="input-name">标题</span>
+                        <input type="text" class="text-full" placeholder="请输入标题">
+                    </div>
+
+                    <div class="win-input mb10">
+                        <span class="input-name" style="height: 60px;">说明</span>
+                        <textarea  id="repairConcat" class=" text-full" name="repairConcat" style="padding: 5px 5px ;height: 60px;resize: none;"></textarea>
+                    </div>
+
+                    <div class="win-input mb10" >
+                        <span class="input-name">审核状态</span>
+                        <div class="radio-box">
+                            <label class="label-radio">
+                                <input type="radio" name="radio">
+                                <span class="radio-name">审核通过</span>
+                            </label>
+                            <label class="label-radio">
+                                <input type="radio" name="radio">
+                                <span class="radio-name">审核不通过&emsp;</span>
+                            </label>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="actionBtnGroup" style="padding: 0 0 15px 10px">
+                <button class="button-normal button-add">保存</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="button-normal button-add">返回</button>
+            </div>
+        </div>
+
+<!--    <script>-->
+<!--        $(function () {-->
+<!--            $('.tabWrap .tabBtn').click(function () {-->
+<!--                $(this).addClass('tabActive').siblings('span').removeClass('tabActive');-->
+<!--                var idx = $(this).index();-->
+<!--                $(".bodyLi").eq(idx).addClass('bodyActive').siblings('.bodyLi').removeClass('bodyActive');-->
+<!--            })-->
+
+
+<!--            $('.button-del').click(function () {-->
+<!--                popupAlert({-->
+<!--                    title: "您真的要删除当前这个类目么？",-->
+<!--                    info: "当前栏目AAAA123456",-->
+<!--                    btnSure: "确定",-->
+<!--                    btnCancel: "取消"-->
+<!--                }, function (sure) {-->
+<!--                    tipAlert({-->
+<!--                        title: "删除成功",-->
+<!--                        state: "true", //true成功 fail失败-->
+<!--                        time: 1 //3秒后关闭-->
+<!--                    });-->
+<!--                }, function (cancel) {-->
+<!--                });-->
+<!--            })-->
+<!--        })-->
+<!--    </script>-->
+        </div>
+    </div>
+</body>
+
+</html>

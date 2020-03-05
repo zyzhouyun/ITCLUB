@@ -1,0 +1,38 @@
+package com.dream.itclub.service.impl;
+
+import com.dream.itclub.dao.MessageMapper;
+import com.dream.itclub.dao.SysUserMapper;
+import com.dream.itclub.pojo.Message;
+import com.dream.itclub.pojo.SysUser;
+import com.dream.itclub.pojo.custom.CustomMessage;
+import com.dream.itclub.service.ICustomMessageService;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
+import java.util.List;
+@Service
+public class CustomMessageService implements ICustomMessageService {
+    @Resource
+    private MessageMapper messageMapper;
+    @Resource
+    private SysUserMapper sysUserMapper;
+
+
+    @Override
+    public List<CustomMessage> findMessage(String id) throws Exception {
+        List<CustomMessage> message = messageMapper.findMessage(id);
+        return message;
+    }
+
+    @Override
+    public SysUser findUser(String id) throws Exception {
+        SysUser user = sysUserMapper.selectByPrimaryKey(id);
+        return user;
+    }
+
+    @Override
+    public int addMessage(Message message) {
+        int i = messageMapper.insert(message);
+        return i;
+    }
+}

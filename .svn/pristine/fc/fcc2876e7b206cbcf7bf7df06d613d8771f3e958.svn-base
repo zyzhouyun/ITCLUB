@@ -1,0 +1,50 @@
+package com.dream.itclub.handler;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("ref")
+public class RefHander {
+
+
+    /**
+     * 跳转到首页
+     */
+    @RequestMapping(value = "/toIndexPage")
+    public String toIndexPage(){
+        return "index";
+    }
+
+
+    /**
+     * 跳转到博客页面
+     * @return
+     */
+    @RequestMapping(value = "/toArtclePage")
+    public String toArtclePage(){
+        return "article";
+    }
+
+
+    /**
+     * 跳转到留言
+     */
+    @RequestMapping(value = "/toMessagePage")
+    public String toMessagePage(){
+        return "message";
+    }
+
+
+    /**
+     * 跳转到链接页
+     */
+    @RequestMapping(value = "/toLinkPage")
+    public String toLinkPage(){
+        return "link";
+    }
+
+
+
+
+}

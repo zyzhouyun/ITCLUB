@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dream.itclub.dao.custom.StatisticsMapper">
+
+  <select id="findNumberBlogs" parameterType="java.lang.String" resultType="java.lang.Integer">
+    select count(0) from blog t
+    <where>
+    <if test="startTime!=null and startTime != ''">
+      and to_char(t.bpublishtime,'yyyy:mm:dd') <![CDATA[>=]]> #{startTime}
+    </if>
+    <if test="endTime!=null and endTime != ''">
+      and to_char(t.bpublishtime,'yyyy:mm:dd') <![CDATA[<=]]> #{endTime}
+    </if>
+    </where>
+  </select>
+
+  <select id="findRegisteredUsers" parameterType="java.lang.String" resultType="java.lang.Integer">
+    select count(0) from sysuser t
+      <where>
+        <if test="startTime!=null and startTime != ''">
+          and to_char(t.registerdate,'yyyy:mm:dd') <![CDATA[>=]]> #{startTime}
+        </if>
+        <if test="endTime!=null and endTime != ''">
+          and to_char(t.registerdate,'yyyy:mm:dd') <![CDATA[<=]]> #{endTime}
+        </if>
+      </where>
+  </select>
+</mapper>

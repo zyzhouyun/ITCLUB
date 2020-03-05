@@ -1,0 +1,30 @@
+package com.dream.itclub.dao;
+
+import com.dream.itclub.pojo.RepMessage;
+import com.dream.itclub.pojo.RepMessageExample;
+import java.util.List;
+import org.apache.ibatis.annotations.Param;
+
+public interface RepMessageMapper {
+    long countByExample(RepMessageExample example);
+
+    int deleteByExample(RepMessageExample example);
+
+    int deleteByPrimaryKey(String remsgid);
+
+    int insert(RepMessage record);
+
+    int insertSelective(RepMessage record);
+
+    List<RepMessage> selectByExample(RepMessageExample example);
+
+    RepMessage selectByPrimaryKey(String remsgid);
+
+    int updateByExampleSelective(@Param("record") RepMessage record, @Param("example") RepMessageExample example);
+
+    int updateByExample(@Param("record") RepMessage record, @Param("example") RepMessageExample example);
+
+    int updateByPrimaryKeySelective(RepMessage record);
+
+    int updateByPrimaryKey(RepMessage record);
+}

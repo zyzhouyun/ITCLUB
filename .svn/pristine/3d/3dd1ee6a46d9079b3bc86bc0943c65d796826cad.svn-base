@@ -1,0 +1,18 @@
+package com.dream.itclub.service;
+
+import com.dream.itclub.pojo.Message;
+import com.dream.itclub.pojo.SysUser;
+import com.dream.itclub.pojo.custom.CustomMessage;
+
+import java.util.List;
+
+public interface ICustomMessageService {
+    //查询用户留言记录
+    public List<CustomMessage> findMessage(String id)throws Exception;
+
+    //查询留言用户姓名
+    public SysUser findUser(String id)throws Exception;
+
+    //添加留言
+    public int addMessage(Message message);
+}

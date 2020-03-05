@@ -1,0 +1,19 @@
+#tomcat
+server.port=8080
+server.tomcat.uri-encoding=UTF-8
+
+#dataSource
+spring.datasource.url=jdbc:oracle:thin:@127.0.0.1:1521:orcl
+spring.datasource.username=C##ZYUSER
+spring.datasource.password=1234
+spring.datasource.driver-class-name=oracle.jdbc.driver.OracleDriver
+
+spring.thymeleaf.cache=false
+
+#设置mybatis ResultMap映射级别：full；全部映射
+mybatis.configuration.auto-mapping-behavior=full
+
+#Log
+logging.file=tlog/springboot.log
+logging.level.root=info
+logging.level.com.example=info

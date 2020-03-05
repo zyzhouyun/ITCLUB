@@ -1,0 +1,23 @@
+package com.dream.itclub.handler;
+
+import com.dream.itclub.pojo.custom.CustomMessage;
+import com.dream.itclub.service.ICustomMessageService;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.annotation.Resource;
+import java.util.List;
+
+@Controller
+public class MessageHandler {
+    @Resource
+    private ICustomMessageService messageService;
+
+    @RequestMapping("findMessage")
+    public String findMessage(Model model,String id) throws Exception {
+        List<CustomMessage> message = messageService.findMessage(id);
+        model.addAttribute("messageList",message);
+        return "message";
+    }
+}

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dream.itclub.dao.HistoryMapper">
+  <resultMap id="BaseResultMap" type="com.dream.itclub.pojo.History">
+    <id column="HISID" jdbcType="VARCHAR" property="hisid" />
+    <result column="BID" jdbcType="VARCHAR" property="bid" />
+    <result column="USERID" jdbcType="VARCHAR" property="userid" />
+    <result column="HISTIME" jdbcType="TIMESTAMP" property="histime" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    HISID, BID, USERID, HISTIME
+  </sql>
+  <select id="selectByExample" parameterType="com.dream.itclub.pojo.HistoryExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from HISTORY
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from HISTORY
+    where HISID = #{hisid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from HISTORY
+    where HISID = #{hisid,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.dream.itclub.pojo.HistoryExample">
+    delete from HISTORY
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.dream.itclub.pojo.History">
+    insert into HISTORY (HISID, BID, USERID, 
+      HISTIME)
+    values (#{hisid,jdbcType=VARCHAR}, #{bid,jdbcType=VARCHAR}, #{userid,jdbcType=VARCHAR}, 
+      #{histime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.dream.itclub.pojo.History">
+    insert into HISTORY
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="hisid != null">
+        HISID,
+      </if>
+      <if test="bid != null">
+        BID,
+      </if>
+      <if test="userid != null">
+        USERID,
+      </if>
+      <if test="histime != null">
+        HISTIME,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="hisid != null">
+        #{hisid,jdbcType=VARCHAR},
+      </if>
+      <if test="bid != null">
+        #{bid,jdbcType=VARCHAR},
+      </if>
+      <if test="userid != null">
+        #{userid,jdbcType=VARCHAR},
+      </if>
+      <if test="histime != null">
+        #{histime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.dream.itclub.pojo.HistoryExample" resultType="java.lang.Long">
+    select count(*) from HISTORY
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update HISTORY
+    <set>
+      <if test="record.hisid != null">
+        HISID = #{record.hisid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.bid != null">
+        BID = #{record.bid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.userid != null">
+        USERID = #{record.userid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.histime != null">
+        HISTIME = #{record.histime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update HISTORY
+    set HISID = #{record.hisid,jdbcType=VARCHAR},
+      BID = #{record.bid,jdbcType=VARCHAR},
+      USERID = #{record.userid,jdbcType=VARCHAR},
+      HISTIME = #{record.histime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dream.itclub.pojo.History">
+    update HISTORY
+    <set>
+      <if test="bid != null">
+        BID = #{bid,jdbcType=VARCHAR},
+      </if>
+      <if test="userid != null">
+        USERID = #{userid,jdbcType=VARCHAR},
+      </if>
+      <if test="histime != null">
+        HISTIME = #{histime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where HISID = #{hisid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dream.itclub.pojo.History">
+    update HISTORY
+    set BID = #{bid,jdbcType=VARCHAR},
+      USERID = #{userid,jdbcType=VARCHAR},
+      HISTIME = #{histime,jdbcType=TIMESTAMP}
+    where HISID = #{hisid,jdbcType=VARCHAR}
+  </update>
+</mapper>

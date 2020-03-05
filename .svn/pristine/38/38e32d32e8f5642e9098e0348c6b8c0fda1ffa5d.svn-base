@@ -1,0 +1,12 @@
+package com.dream.itclub.service;
+
+import com.dream.itclub.pojo.custom.CustomBlog;
+
+import java.util.List;
+
+public interface ICustomBlogService {
+
+    public List<CustomBlog> findCustomBlogService(CustomBlog customBlog)throws Exception;
+
+
+}

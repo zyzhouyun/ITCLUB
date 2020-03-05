@@ -1,0 +1,19 @@
+package com.dream.itclub.service.impl;
+
+import com.dream.itclub.dao.MessageMapper;
+import com.dream.itclub.pojo.custom.CustomMessage;
+import com.dream.itclub.service.ICustomMessageService;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
+import java.util.List;
+@Service
+public class CustomMessageService implements ICustomMessageService {
+    @Resource
+    private MessageMapper messageMapper;
+    @Override
+    public List<CustomMessage> findMessage(String id) throws Exception {
+        List<CustomMessage> message = messageMapper.findMessage(id);
+        return message;
+    }
+}

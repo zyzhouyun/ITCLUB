@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dream.itclub.dao.CommentsMapper">
+  <resultMap id="BaseResultMap" type="com.dream.itclub.pojo.Comments">
+    <id column="COMID" jdbcType="VARCHAR" property="comid" />
+    <result column="BID" jdbcType="VARCHAR" property="bid" />
+    <result column="USERID" jdbcType="VARCHAR" property="userid" />
+    <result column="COMCONTENT" jdbcType="VARCHAR" property="comcontent" />
+    <result column="COMGOODNUM" jdbcType="DECIMAL" property="comgoodnum" />
+    <result column="COMDATETIME" jdbcType="TIMESTAMP" property="comdatetime" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    COMID, BID, USERID, COMCONTENT, COMGOODNUM, COMDATETIME
+  </sql>
+  <select id="selectByExample" parameterType="com.dream.itclub.pojo.CommentsExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from COMMENTS
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from COMMENTS
+    where COMID = #{comid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from COMMENTS
+    where COMID = #{comid,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.dream.itclub.pojo.CommentsExample">
+    delete from COMMENTS
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.dream.itclub.pojo.Comments">
+    insert into COMMENTS (COMID, BID, USERID, 
+      COMCONTENT, COMGOODNUM, COMDATETIME
+      )
+    values (#{comid,jdbcType=VARCHAR}, #{bid,jdbcType=VARCHAR}, #{userid,jdbcType=VARCHAR}, 
+      #{comcontent,jdbcType=VARCHAR}, #{comgoodnum,jdbcType=DECIMAL}, #{comdatetime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.dream.itclub.pojo.Comments">
+    insert into COMMENTS
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="comid != null">
+        COMID,
+      </if>
+      <if test="bid != null">
+        BID,
+      </if>
+      <if test="userid != null">
+        USERID,
+      </if>
+      <if test="comcontent != null">
+        COMCONTENT,
+      </if>
+      <if test="comgoodnum != null">
+        COMGOODNUM,
+      </if>
+      <if test="comdatetime != null">
+        COMDATETIME,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="comid != null">
+        #{comid,jdbcType=VARCHAR},
+      </if>
+      <if test="bid != null">
+        #{bid,jdbcType=VARCHAR},
+      </if>
+      <if test="userid != null">
+        #{userid,jdbcType=VARCHAR},
+      </if>
+      <if test="comcontent != null">
+        #{comcontent,jdbcType=VARCHAR},
+      </if>
+      <if test="comgoodnum != null">
+        #{comgoodnum,jdbcType=DECIMAL},
+      </if>
+      <if test="comdatetime != null">
+        #{comdatetime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.dream.itclub.pojo.CommentsExample" resultType="java.lang.Long">
+    select count(*) from COMMENTS
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update COMMENTS
+    <set>
+      <if test="record.comid != null">
+        COMID = #{record.comid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.bid != null">
+        BID = #{record.bid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.userid != null">
+        USERID = #{record.userid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.comcontent != null">
+        COMCONTENT = #{record.comcontent,jdbcType=VARCHAR},
+      </if>
+      <if test="record.comgoodnum != null">
+        COMGOODNUM = #{record.comgoodnum,jdbcType=DECIMAL},
+      </if>
+      <if test="record.comdatetime != null">
+        COMDATETIME = #{record.comdatetime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update COMMENTS
+    set COMID = #{record.comid,jdbcType=VARCHAR},
+      BID = #{record.bid,jdbcType=VARCHAR},
+      USERID = #{record.userid,jdbcType=VARCHAR},
+      COMCONTENT = #{record.comcontent,jdbcType=VARCHAR},
+      COMGOODNUM = #{record.comgoodnum,jdbcType=DECIMAL},
+      COMDATETIME = #{record.comdatetime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dream.itclub.pojo.Comments">
+    update COMMENTS
+    <set>
+      <if test="bid != null">
+        BID = #{bid,jdbcType=VARCHAR},
+      </if>
+      <if test="userid != null">
+        USERID = #{userid,jdbcType=VARCHAR},
+      </if>
+      <if test="comcontent != null">
+        COMCONTENT = #{comcontent,jdbcType=VARCHAR},
+      </if>
+      <if test="comgoodnum != null">
+        COMGOODNUM = #{comgoodnum,jdbcType=DECIMAL},
+      </if>
+      <if test="comdatetime != null">
+        COMDATETIME = #{comdatetime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where COMID = #{comid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dream.itclub.pojo.Comments">
+    update COMMENTS
+    set BID = #{bid,jdbcType=VARCHAR},
+      USERID = #{userid,jdbcType=VARCHAR},
+      COMCONTENT = #{comcontent,jdbcType=VARCHAR},
+      COMGOODNUM = #{comgoodnum,jdbcType=DECIMAL},
+      COMDATETIME = #{comdatetime,jdbcType=TIMESTAMP}
+    where COMID = #{comid,jdbcType=VARCHAR}
+  </update>
+
+  <resultMap id="commentsMap" type="com.dream.itclub.pojo.custom.CustomComments">
+    <id property="comid" column="COMID"/>
+    <result property="bid" column="BID"/>
+    <result property="userid" column="USERID"/>
+    <result property="comcontent" column="COMCONTENT"/>
+    <result property="comgoodnum" column="COMGOODNUM"/>
+    <result property="comdatetime" column="COMDATETIME"/>
+    <association property="sysUser" javaType="com.dream.itclub.pojo.SysUser">
+      <id property="userid" column="USERID"/>
+      <result property="uname" column="UNAME"/>
+      <result property="imagepath" column="IMAGEPATH"/>
+    </association>
+    <association property="blog" javaType="com.dream.itclub.pojo.Blog">
+      <id property="bid" column="BID"/>
+    </association>
+  </resultMap>
+
+  <select id="findComments" resultMap="commentsMap" parameterType="java.lang.String">
+    select s.uname,s.userid,s.imagepath,com.comcontent,com.comgoodnum,com.comdatetime,com.comid,b.bid from blog b,sysuser s,comments com
+    <where>
+      com.bid=b.bid and com.userid=s.userid
+      and com.bid=#{id}
+    </where>
+  </select>
+
+  <select id="findCommentsByComId" resultMap="commentsMap" parameterType="java.lang.String">
+    select s.uname,s.userid,s.imagepath,com.comcontent,com.comgoodnum,com.comdatetime,com.comid,b.bid from blog b,sysuser s,comments com
+    <where>
+      com.bid=b.bid and com.userid=s.userid
+      and com.comid=#{id}
+    </where>
+  </select>
+</mapper>

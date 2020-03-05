@@ -1,0 +1,110 @@
+/**
+ * 周云
+ */
+
+
+//alert(11)
+
+
+
+Vue.http.options.emulateJSON = true
+const vm = new Vue({
+    el:'#doc-container',
+    data:{
+        page:{},
+        blogTypes:[],
+        keyword:'',
+
+    },
+    methods:{
+        timestampToDate(timestamp){
+            var date = new Date(timestamp);
+            Y = date.getFullYear() + '-';
+            M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '-';
+            D = date.getDate() + ' ';
+            h = date.getHours() + ':';
+            m = date.getMinutes()
+            return Y+M+D+h+m
+        },
+        timestampToTime(timestamp) {
+            var date = new Date(timestamp);
+            Y = date.getFullYear() + '-';
+            M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '-';
+            D = date.getDate() + ' ';
+            h = date.getHours() + ':';
+            m = date.getMinutes() + ':';
+            s = date.getSeconds();
+            return Y+M+D+h+m+s
+        },
+        initCustomBlog(){
+            let url='/blog/findBlog'
+            this.$http.get(url).then((res)=>{
+                if(res.body.code==200){
+                    console.log(res.body.data)
+                    this.page=res.body.data
+                }else{
+                    alert(res.body.message)
+                }
+            },(err)=>{
+                console.log(err)
+            })
+        },
+        initBlogType(){
+            let url='/type/getBlogTypes'
+            this.$http.get(url).then((res)=>{
+                if(res.body.code==200){
+                    this.blogTypes = res.body.data
+                }else{
+                    alert(res.body.message)
+                }
+            },(err)=>{
+                console.log(err)
+            })
+        },
+        getBlog(typeid){
+            let url='/blog/findBlog'
+            this.$http.post(url,{
+                "blogType.typeid":typeid
+            }).then((res)=>{
+                if(res.body.code==200){
+                    this.page = res.body.data
+                }else{
+                    alert(res.body.message)
+                }
+            },(err)=>{
+                console.log(err)
+            })
+        },
+        search(){
+            let url='/blog/findBlog?blogTitle='+this.keyword
+            this.$http.get(url).then((res)=>{
+                if(res.body.code==200) {
+                    this.page = res.body.data
+                }else{
+                    alert(res.body.message)
+                }
+            })
+        },
+        pager($pageNum){
+            console.log($pageNum)
+            let url='/blog/findBlog?pageNum='+$pageNum
+            this.$http.get(url).then((res)=>{
+                if(res.body.code==200){
+                    console.log(res.body.data)
+                    this.page=res.body.data
+                }else{
+                    alert(res.body.message)
+                }
+            },(err)=>{
+                console.log(err)
+            })
+
+        }
+
+        },
+    created(){
+        this.initCustomBlog()
+        this.initBlogType()
+
+    }
+})

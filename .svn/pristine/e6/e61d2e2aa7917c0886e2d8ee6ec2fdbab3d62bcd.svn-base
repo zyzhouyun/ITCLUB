@@ -1,0 +1,10 @@
+package com.dream.itclub.dao.custom;
+
+import com.dream.itclub.pojo.custom.CustomBlog;
+
+import java.util.List;
+
+public interface CustomBlogMapper {
+
+    public List<CustomBlog> findCustomBlog(CustomBlog customBlog)throws Exception;
+}

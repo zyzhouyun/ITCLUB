@@ -1,0 +1,9 @@
+package com.dream.itclub.service;
+
+import com.dream.itclub.pojo.custom.CustomMessage;
+
+import java.util.List;
+
+public interface ICustomMessageService {
+    public List<CustomMessage> findMessage(String id)throws Exception;
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+
+<generatorConfiguration>
+    <classPathEntry
+            location="E:/Maven_Repository/com/oracle/ojdbc6/11.2.0.3/ojdbc6-11.2.0.3.jar"/>
+    <context id="context" targetRuntime="MyBatis3">
+        <commentGenerator>
+            <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+        <!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
+        <jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"
+                        connectionURL="jdbc:oracle:thin:@localhost:1521:orcl" userId="ITCLUB"
+                        password="z1234"/>
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+        <javaModelGenerator targetPackage="com.dream.itclub.pojo" targetProject="D:/itclub/src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaModelGenerator>
+        <sqlMapGenerator targetPackage="com.dream.itclub.dao" targetProject="D:/itclub/src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.dream.itclub.dao" targetProject="D:/itclub/src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+        <table tableName="BLOG" domainObjectName="Blog">
+            <property name="useActualColumnNames" value="true"/>
+        </table>
+        <table tableName="BLOGTYPE" domainObjectName="BlogType">
+            <property name="useActualColumnNames" value="true"/>
+        </table>
+        <table tableName="FANS" domainObjectName="Fans">
+            <property name="useActualColumnNames" value="true"/>
+        </table>
+        <table tableName="FOCUSON" domainObjectName="FocusOn">
+            <property name="useActualColumnNames" value="true"/>
+        </table>
+        <table tableName="HISTORY" domainObjectName="History">
+            <property name="useActualColumnNames" value="true"/>
+        </table>
+        <table tableName="MEMBER" domainObjectName="Member">
+            <property name="useActualColumnNames" value="true"/>
+        </table>
+        <table tableName="MESSAGE" domainObjectName="Message">
+            <property name="useActualColumnNames" value="true"/>
+        </table>
+        <table tableName="REPCOM" domainObjectName="RepCom">
+            <property name="useActualColumnNames" value="true"/>
+        </table>
+        <table tableName="REPMESSAGE" domainObjectName="RepMessage">
+            <property name="useActualColumnNames" value="true"/>
+        </table>
+        <table tableName="SYSUSER" domainObjectName="SysUser">
+            <property name="useActualColumnNames" value="true"/>
+        </table>
+    </context>
+</generatorConfiguration>

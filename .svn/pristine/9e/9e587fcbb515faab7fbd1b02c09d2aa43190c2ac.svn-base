@@ -1,0 +1,24 @@
+package com.dream.itclub.pojo.custom;
+
+import com.dream.itclub.pojo.Message;
+import com.dream.itclub.pojo.SysUser;
+
+public class CustomMessage extends Message {
+    private SysUser sysUser;
+
+    public SysUser getSysUser() {
+        return sysUser;
+    }
+
+    public void setSysUser(SysUser sysUser) {
+        this.sysUser = sysUser;
+    }
+
+    @Override
+    public String toString() {
+        return "CustomMessage{" +
+                "sysUser=" + sysUser +
+                super.toString()+
+                '}';
+    }
+}

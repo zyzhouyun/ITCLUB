@@ -1,0 +1,716 @@
+2020-03-05 11:24:35.940  INFO 14020 --- [restartedMain] com.dream.itclub.ItclubApplication       : Starting ItclubApplication on DESKTOP-QNVVKMQ with PID 14020 (D:\IDEAPOJ\itclub\target\classes started by hr in D:\IDEAPOJ\itclub)
+2020-03-05 11:24:35.940  INFO 14020 --- [restartedMain] com.dream.itclub.ItclubApplication       : No active profile set, falling back to default profiles: default
+2020-03-05 11:24:36.159  INFO 14020 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Maven_Repository\com\oracle\ojdbc\ojdbc8\19.3.0.0\ojdbc8-19.3.0.0.jar referenced one or more files that do not exist: file:/D:/Maven_Repository/com/oracle/ojdbc/ojdbc8/19.3.0.0/oraclepki.jar
+2020-03-05 11:24:36.159  INFO 14020 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Maven_Repository\com\oracle\ojdbc\oraclepki\19.3.0.0\oraclepki-19.3.0.0.jar referenced one or more files that do not exist: file:/D:/Maven_Repository/com/oracle/ojdbc/oraclepki/19.3.0.0/osdt_core.jar,file:/D:/Maven_Repository/com/oracle/ojdbc/oraclepki/19.3.0.0/osdt_cert.jar,file:/D:/Maven_Repository/com/oracle/ojdbc/oraclepki/oracle.osdt/osdt_core.jar,file:/D:/Maven_Repository/com/oracle/ojdbc/oraclepki/oracle.osdt/osdt_cert.jar
+2020-03-05 11:24:36.159  INFO 14020 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Maven_Repository\cn\easyproject\orai18n\12.1.0.2.0\orai18n-12.1.0.2.0.jar referenced one or more files that do not exist: file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/orai18n-mapping.jar,file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/orai18n-utility.jar,file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/orai18n-collation.jar,file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/orai18n-translation.jar,file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/orai18n-net.jar,file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/orai18n-servlet.jar,file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/orai18n-lcsd.jar,file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/orai18n-tools.jar,file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/gdk_custom.jar
+2020-03-05 11:24:36.159  INFO 14020 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-05 11:24:36.159  INFO 14020 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-05 11:24:38.033  INFO 14020 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-05 11:24:38.033  INFO 14020 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-03-05 11:24:38.080  INFO 14020 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
+2020-03-05 11:24:38.408  INFO 14020 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.dream.itclub.conf.RedisConfig$$EnhancerBySpringCGLIB$$afd84fdc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-05 11:24:38.408  INFO 14020 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-05 11:24:38.783  INFO 14020 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-05 11:24:38.799  INFO 14020 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-05 11:24:38.799  INFO 14020 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-03-05 11:24:38.892  INFO 14020 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-05 11:24:38.892  INFO 14020 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2733 ms
+2020-03-05 11:24:39.095  WARN 14020 --- [restartedMain] c.a.druid.pool.DruidAbstractDataSource   : oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2020-03-05 11:24:40.158  INFO 14020 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-05 11:24:40.236  INFO 14020 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-05 11:24:40.704  INFO 14020 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-05 11:24:40.814  INFO 14020 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-05 11:24:40.814  INFO 14020 --- [restartedMain] com.dream.itclub.ItclubApplication       : Started ItclubApplication in 5.662 seconds (JVM running for 8.204)
+2020-03-05 11:25:05.891  INFO 14020 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-05 11:25:05.892  INFO 14020 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-05 11:25:05.902  INFO 14020 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-03-05 11:25:09.743  INFO 14020 --- [http-nio-8080-exec-4] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-03-05 11:25:09.748  INFO 14020 --- [http-nio-8080-exec-4] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-03-05 11:25:11.524  INFO 14020 --- [http-nio-8080-exec-6] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-03-05 11:25:11.524 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.orderDescList                : ==>  Preparing: select b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS from ( select * from blog order by bpvnum DESC )b where rownum <= 10 
+2020-03-05 11:25:11.571 DEBUG 14020 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID 
+2020-03-05 11:25:11.571 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID 
+2020-03-05 11:25:11.571 DEBUG 14020 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:25:11.633 DEBUG 14020 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 
+2020-03-05 11:25:11.633 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 
+2020-03-05 11:25:11.633 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.orderDescList                : ==> Parameters: 
+2020-03-05 11:25:11.633 DEBUG 14020 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 0(String)
+2020-03-05 11:25:11.664 DEBUG 14020 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:11.664 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:11.664 DEBUG 14020 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:11.680 DEBUG 14020 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:11.680 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:11.680 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID 
+2020-03-05 11:25:11.680 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 3(Integer)
+2020-03-05 11:25:11.680 DEBUG 14020 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 3(Integer)
+2020-03-05 11:25:11.680 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 
+2020-03-05 11:25:11.680 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:11.696 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:11.696 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 3(Integer)
+2020-03-05 11:25:11.696 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:25:11.696 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 0af8c86a25ed41ea817a7dbbf47a1ea7(String)
+2020-03-05 11:25:11.711 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:11.711 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.orderDescList                : <==      Total: 9
+2020-03-05 11:25:11.711 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:11.711 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 0af8c86a25ed41ea817a7dbbf47a1ea7(String), 3(Integer)
+2020-03-05 11:25:11.727 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:25:11.758 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:25:11.774 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog               : <==      Total: 1
+2020-03-05 11:25:11.774 DEBUG 14020 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:25:11.836 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:25:11.836 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String)
+2020-03-05 11:25:11.836 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:11.836 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:11.836 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String), 3(Integer)
+2020-03-05 11:25:11.867 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:25:11.899 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:25:11.914 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 0af8c86a25ed41ea817a7dbbf47a1ea7(String)
+2020-03-05 11:25:11.914 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:11.914 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:11.914 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 0af8c86a25ed41ea817a7dbbf47a1ea7(String), 3(Integer)
+2020-03-05 11:25:11.914 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog               : <==      Total: 1
+2020-03-05 11:25:13.976 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:25:13.976 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 0af8c86a25ed41ea817a7dbbf47a1ea7(String)
+2020-03-05 11:25:13.976 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:13.992 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:13.992 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 0af8c86a25ed41ea817a7dbbf47a1ea7(String), 3(Integer)
+2020-03-05 11:25:13.992 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog               : <==      Total: 1
+2020-03-05 11:25:15.195 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:25:15.195 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 0af8c86a25ed41ea817a7dbbf47a1ea7(String)
+2020-03-05 11:25:15.195 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:15.195 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:15.195 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 0af8c86a25ed41ea817a7dbbf47a1ea7(String), 3(Integer)
+2020-03-05 11:25:15.210 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : <==      Total: 1
+2020-03-05 11:25:15.226 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID 
+2020-03-05 11:25:15.226 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 
+2020-03-05 11:25:15.226 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:15.226 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:15.226 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 3(Integer)
+2020-03-05 11:25:15.226 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:25:15.242 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID 
+2020-03-05 11:25:15.242 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 
+2020-03-05 11:25:15.242 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:15.257 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:15.257 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 3(Integer)
+2020-03-05 11:25:15.257 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:25:16.304 DEBUG 14020 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID 
+2020-03-05 11:25:16.304 DEBUG 14020 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 
+2020-03-05 11:25:16.304 DEBUG 14020 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:16.304 DEBUG 14020 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:16.304 DEBUG 14020 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 3(Integer)
+2020-03-05 11:25:16.304 DEBUG 14020 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:25:18.989 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:25:18.989 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 0af8c86a25ed41ea817a7dbbf47a1ea7(String)
+2020-03-05 11:25:18.989 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:18.989 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:18.989 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 0af8c86a25ed41ea817a7dbbf47a1ea7(String), 3(Integer)
+2020-03-05 11:25:18.989 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog               : <==      Total: 1
+2020-03-05 11:25:19.020 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID 
+2020-03-05 11:25:19.020 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 
+2020-03-05 11:25:19.020 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:19.020 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:19.020 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 3(Integer)
+2020-03-05 11:25:19.020 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:25:19.083 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:25:19.083 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 0af8c86a25ed41ea817a7dbbf47a1ea7(String)
+2020-03-05 11:25:19.083 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:19.083 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:19.083 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 0af8c86a25ed41ea817a7dbbf47a1ea7(String), 3(Integer)
+2020-03-05 11:25:19.083 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : <==      Total: 1
+2020-03-05 11:25:19.661 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:25:19.661 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String)
+2020-03-05 11:25:19.661 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:19.661 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:19.661 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String), 3(Integer)
+2020-03-05 11:25:19.661 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:25:20.239 DEBUG 14020 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:25:20.239 DEBUG 14020 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String)
+2020-03-05 11:25:20.239 DEBUG 14020 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:20.239 DEBUG 14020 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:20.239 DEBUG 14020 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String), 3(Integer)
+2020-03-05 11:25:20.239 DEBUG 14020 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog               : <==      Total: 2
+2020-03-05 11:25:21.224 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:25:21.224 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 0(String)
+2020-03-05 11:25:21.224 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:21.817 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:25:21.817 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String)
+2020-03-05 11:25:21.832 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:21.832 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:21.832 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String), 3(Integer)
+2020-03-05 11:25:21.832 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog               : <==      Total: 2
+2020-03-05 11:25:23.347 DEBUG 14020 --- [http-nio-8080-exec-3] c.d.i.dao.CommentsMapper.findComments    : ==>  Preparing: select s.uname,s.userid,s.imagepath,com.comcontent,com.comgoodnum,com.comdatetime,com.comid,b.bid from blog b,sysuser s,comments com WHERE com.bid=b.bid and com.userid=s.userid and com.bid=? order by com.comdatetime desc 
+2020-03-05 11:25:23.347 DEBUG 14020 --- [http-nio-8080-exec-3] c.d.i.dao.CommentsMapper.findComments    : ==> Parameters: 4f128aebce4c41ab8c778379fbbfe092(String)
+2020-03-05 11:25:23.363 DEBUG 14020 --- [http-nio-8080-exec-3] c.d.i.dao.CommentsMapper.findComments    : <==      Total: 0
+2020-03-05 11:25:40.628 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID 
+2020-03-05 11:25:40.628 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 
+2020-03-05 11:25:40.643 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.orderDescList                : ==>  Preparing: select b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS from ( select * from blog order by bpvnum DESC )b where rownum <= 10 
+2020-03-05 11:25:40.643 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.orderDescList                : ==> Parameters: 
+2020-03-05 11:25:40.643 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:40.643 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:40.643 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 3(Integer)
+2020-03-05 11:25:40.659 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:25:40.659 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.orderDescList                : <==      Total: 9
+2020-03-05 11:25:43.252 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID 
+2020-03-05 11:25:43.252 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 
+2020-03-05 11:25:43.252 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:43.252 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:43.252 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 3(Integer)
+2020-03-05 11:25:43.268 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:25:43.330 DEBUG 14020 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:25:43.330 DEBUG 14020 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 0af8c86a25ed41ea817a7dbbf47a1ea7(String)
+2020-03-05 11:25:43.330 DEBUG 14020 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:43.330 DEBUG 14020 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:43.330 DEBUG 14020 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 0af8c86a25ed41ea817a7dbbf47a1ea7(String), 3(Integer)
+2020-03-05 11:25:43.346 DEBUG 14020 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog               : <==      Total: 1
+2020-03-05 11:25:43.580 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:25:43.580 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String)
+2020-03-05 11:25:43.580 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:43.580 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:43.580 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String), 3(Integer)
+2020-03-05 11:25:43.580 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:25:43.690 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:25:43.690 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String)
+2020-03-05 11:25:43.690 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:43.690 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:43.690 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String), 3(Integer)
+2020-03-05 11:25:43.690 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog               : <==      Total: 2
+2020-03-05 11:25:43.908 DEBUG 14020 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:25:43.908 DEBUG 14020 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String)
+2020-03-05 11:25:43.908 DEBUG 14020 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:43.908 DEBUG 14020 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:43.908 DEBUG 14020 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String), 3(Integer)
+2020-03-05 11:25:43.924 DEBUG 14020 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:25:44.783 DEBUG 14020 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:25:44.783 DEBUG 14020 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String)
+2020-03-05 11:25:44.783 DEBUG 14020 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:44.783 DEBUG 14020 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:44.783 DEBUG 14020 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String), 3(Integer)
+2020-03-05 11:25:44.783 DEBUG 14020 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog               : <==      Total: 2
+2020-03-05 11:25:45.627 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:25:45.627 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String)
+2020-03-05 11:25:45.627 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:45.627 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:45.627 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String), 3(Integer)
+2020-03-05 11:25:45.627 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog               : <==      Total: 2
+2020-03-05 11:25:51.188 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.dao.CommentsMapper.findComments    : ==>  Preparing: select s.uname,s.userid,s.imagepath,com.comcontent,com.comgoodnum,com.comdatetime,com.comid,b.bid from blog b,sysuser s,comments com WHERE com.bid=b.bid and com.userid=s.userid and com.bid=? order by com.comdatetime desc 
+2020-03-05 11:25:51.188 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.dao.CommentsMapper.findComments    : ==> Parameters: 4f128aebce4c41ab8c778379fbbfe092(String)
+2020-03-05 11:25:51.203 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.dao.CommentsMapper.findComments    : <==      Total: 0
+2020-03-05 11:25:58.092 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID 
+2020-03-05 11:25:58.092 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 
+2020-03-05 11:25:58.092 DEBUG 14020 --- [http-nio-8080-exec-1] c.d.i.d.c.C.orderDescList                : ==>  Preparing: select b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS from ( select * from blog order by bpvnum DESC )b where rownum <= 10 
+2020-03-05 11:25:58.092 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:25:58.092 DEBUG 14020 --- [http-nio-8080-exec-1] c.d.i.d.c.C.orderDescList                : ==> Parameters: 
+2020-03-05 11:25:58.092 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:25:58.092 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 3(Integer)
+2020-03-05 11:25:58.108 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:25:58.108 DEBUG 14020 --- [http-nio-8080-exec-1] c.d.i.d.c.C.orderDescList                : <==      Total: 9
+2020-03-05 11:25:58.108  WARN 14020 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.apache.catalina.connector.ClientAbortException: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。]
+2020-03-05 11:25:58.124 ERROR 14020 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: getOutputStream() has already been called for this response] with root cause
+
+java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.apache.catalina.connector.Response.getWriter(Response.java:581) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:227) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:360) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373) ~[spring-webmvc-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118) ~[spring-webmvc-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057) ~[spring-webmvc-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+
+2020-03-05 11:26:04.278 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:26:04.278 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 0af8c86a25ed41ea817a7dbbf47a1ea7(String)
+2020-03-05 11:26:04.278 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:26:04.278 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:26:04.278 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 0af8c86a25ed41ea817a7dbbf47a1ea7(String), 3(Integer)
+2020-03-05 11:26:04.278 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog               : <==      Total: 1
+2020-03-05 11:26:04.388 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:26:04.388 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 0af8c86a25ed41ea817a7dbbf47a1ea7(String)
+2020-03-05 11:26:04.388 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:26:04.388 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:26:04.388 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 0af8c86a25ed41ea817a7dbbf47a1ea7(String), 3(Integer)
+2020-03-05 11:26:04.388 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog               : <==      Total: 1
+2020-03-05 11:26:04.544 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:26:04.544 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String)
+2020-03-05 11:26:04.544 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:26:04.544 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:26:04.544 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String), 3(Integer)
+2020-03-05 11:26:04.544 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:26:04.778 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:26:04.778 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String)
+2020-03-05 11:26:04.778 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:26:04.794 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:26:04.794 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String), 3(Integer)
+2020-03-05 11:26:04.794 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog               : <==      Total: 2
+2020-03-05 11:26:05.435 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:26:05.435 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String)
+2020-03-05 11:26:05.450 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:26:05.450 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:26:05.450 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String), 3(Integer)
+2020-03-05 11:26:05.450 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:26:05.903 DEBUG 14020 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:26:05.903 DEBUG 14020 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 0af8c86a25ed41ea817a7dbbf47a1ea7(String)
+2020-03-05 11:26:05.903 DEBUG 14020 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:26:05.903 DEBUG 14020 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:26:05.903 DEBUG 14020 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 0af8c86a25ed41ea817a7dbbf47a1ea7(String), 3(Integer)
+2020-03-05 11:26:05.919 DEBUG 14020 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog               : <==      Total: 1
+2020-03-05 11:26:06.294 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:26:06.294 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String)
+2020-03-05 11:26:06.294 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:26:06.309 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:26:06.309 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String), 3(Integer)
+2020-03-05 11:26:06.309 DEBUG 14020 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:26:06.715 DEBUG 14020 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:26:06.715 DEBUG 14020 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String)
+2020-03-05 11:26:06.715 DEBUG 14020 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:26:06.715 DEBUG 14020 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:26:06.715 DEBUG 14020 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String), 3(Integer)
+2020-03-05 11:26:06.715 DEBUG 14020 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog               : <==      Total: 2
+2020-03-05 11:26:07.403 DEBUG 14020 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:26:07.403 DEBUG 14020 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String)
+2020-03-05 11:26:07.403 DEBUG 14020 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:26:07.418 DEBUG 14020 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:26:07.418 DEBUG 14020 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String), 3(Integer)
+2020-03-05 11:26:07.418 DEBUG 14020 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:26:08.184 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:26:08.184 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String)
+2020-03-05 11:26:08.184 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:26:08.184 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:26:08.184 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String), 3(Integer)
+2020-03-05 11:26:08.184 DEBUG 14020 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:26:12.370 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:26:12.370 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String)
+2020-03-05 11:26:12.370 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:26:12.370 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? ) WHERE ROW_ID > ? 
+2020-03-05 11:26:12.370 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String), 6(Integer), 3(Integer)
+2020-03-05 11:26:12.370 DEBUG 14020 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:26:12.870 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:26:12.870 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String)
+2020-03-05 11:26:12.870 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:26:12.870 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:26:12.870 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String), 3(Integer)
+2020-03-05 11:26:12.886 DEBUG 14020 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:26:13.495 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:26:13.495 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String)
+2020-03-05 11:26:13.495 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:26:13.495 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? ) WHERE ROW_ID > ? 
+2020-03-05 11:26:13.495 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String), 6(Integer), 3(Integer)
+2020-03-05 11:26:13.495 DEBUG 14020 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:26:13.901 DEBUG 14020 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:26:13.901 DEBUG 14020 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String)
+2020-03-05 11:26:13.901 DEBUG 14020 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:26:13.901 DEBUG 14020 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:26:13.901 DEBUG 14020 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String), 3(Integer)
+2020-03-05 11:26:13.901 DEBUG 14020 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:26:23.649 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:26:23.649 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String)
+2020-03-05 11:26:23.665 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:26:23.665 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT * FROM ( SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? ) WHERE ROW_ID > ? 
+2020-03-05 11:26:23.665 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String), 6(Integer), 3(Integer)
+2020-03-05 11:26:23.665 DEBUG 14020 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:26:24.196 DEBUG 14020 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:26:24.196 DEBUG 14020 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String)
+2020-03-05 11:26:24.196 DEBUG 14020 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:26:24.196 DEBUG 14020 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:26:24.196 DEBUG 14020 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String), 3(Integer)
+2020-03-05 11:26:24.196 DEBUG 14020 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:29:50.708  INFO 14020 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-05 11:29:51.020  INFO 14020 --- [Thread-16] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-03-05 11:29:51.960  INFO 14020 --- [restartedMain] com.dream.itclub.ItclubApplication       : Starting ItclubApplication on DESKTOP-QNVVKMQ with PID 14020 (D:\IDEAPOJ\itclub\target\classes started by hr in D:\IDEAPOJ\itclub)
+2020-03-05 11:29:51.960  INFO 14020 --- [restartedMain] com.dream.itclub.ItclubApplication       : No active profile set, falling back to default profiles: default
+2020-03-05 11:29:52.460  INFO 14020 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-05 11:29:52.460  INFO 14020 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-03-05 11:29:52.491  INFO 14020 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34ms. Found 0 repository interfaces.
+2020-03-05 11:29:52.585  INFO 14020 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.dream.itclub.conf.RedisConfig$$EnhancerBySpringCGLIB$$afd84fdc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-05 11:29:52.600  INFO 14020 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-05 11:29:52.663  WARN 14020 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-03-05 11:29:52.741  INFO 14020 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-05 11:29:52.741  INFO 14020 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-05 11:29:52.741  INFO 14020 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-03-05 11:29:52.757  INFO 14020 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-05 11:29:52.757  INFO 14020 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 797 ms
+2020-03-05 11:29:52.835  WARN 14020 --- [restartedMain] c.a.druid.pool.DruidAbstractDataSource   : oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2020-03-05 11:29:52.928  WARN 14020 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogHandler': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.dream.itclub.service.ICustomBlogService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2020-03-05 11:29:52.928  INFO 14020 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-03-05 11:29:52.944  INFO 14020 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-05 11:29:53.131 ERROR 14020 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.dream.itclub.service.ICustomBlogService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.dream.itclub.service.ICustomBlogService' in your configuration.
+
+2020-03-05 11:33:14.922  INFO 14020 --- [restartedMain] com.dream.itclub.ItclubApplication       : Starting ItclubApplication on DESKTOP-QNVVKMQ with PID 14020 (D:\IDEAPOJ\itclub\target\classes started by hr in D:\IDEAPOJ\itclub)
+2020-03-05 11:33:14.922  INFO 14020 --- [restartedMain] com.dream.itclub.ItclubApplication       : No active profile set, falling back to default profiles: default
+2020-03-05 11:33:15.453  INFO 14020 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-05 11:33:15.453  INFO 14020 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-03-05 11:33:15.500  INFO 14020 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47ms. Found 0 repository interfaces.
+2020-03-05 11:33:15.781  INFO 14020 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.dream.itclub.conf.RedisConfig$$EnhancerBySpringCGLIB$$afd84fdc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-05 11:33:15.781  INFO 14020 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-05 11:33:15.844  WARN 14020 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-03-05 11:33:15.906  INFO 14020 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-05 11:33:15.906  INFO 14020 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-05 11:33:15.906  INFO 14020 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-03-05 11:33:15.938  INFO 14020 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-03-05 11:33:15.938  INFO 14020 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1000 ms
+2020-03-05 11:33:15.985  WARN 14020 --- [restartedMain] c.a.druid.pool.DruidAbstractDataSource   : oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2020-03-05 11:33:16.469  INFO 14020 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-05 11:33:16.531  INFO 14020 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-05 11:33:17.109  INFO 14020 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-05 11:33:17.172  INFO 14020 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-05 11:33:17.187  INFO 14020 --- [restartedMain] com.dream.itclub.ItclubApplication       : Started ItclubApplication in 2.322 seconds (JVM running for 524.573)
+2020-03-05 11:33:17.187  INFO 14020 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-03-05 11:34:42.052  INFO 14020 --- [Thread-25] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-05 11:34:43.088  INFO 14020 --- [restartedMain] com.dream.itclub.ItclubApplication       : Starting ItclubApplication on DESKTOP-QNVVKMQ with PID 14020 (D:\IDEAPOJ\itclub\target\classes started by hr in D:\IDEAPOJ\itclub)
+2020-03-05 11:34:43.088  INFO 14020 --- [restartedMain] com.dream.itclub.ItclubApplication       : No active profile set, falling back to default profiles: default
+2020-03-05 11:34:43.462  INFO 14020 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-05 11:34:43.462  INFO 14020 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-03-05 11:34:47.464  INFO 4808 --- [restartedMain] com.dream.itclub.ItclubApplication       : Starting ItclubApplication on DESKTOP-QNVVKMQ with PID 4808 (D:\IDEAPOJ\itclub\target\classes started by hr in D:\IDEAPOJ\itclub)
+2020-03-05 11:34:47.464  INFO 4808 --- [restartedMain] com.dream.itclub.ItclubApplication       : No active profile set, falling back to default profiles: default
+2020-03-05 11:34:47.589  INFO 4808 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Maven_Repository\com\oracle\ojdbc\ojdbc8\19.3.0.0\ojdbc8-19.3.0.0.jar referenced one or more files that do not exist: file:/D:/Maven_Repository/com/oracle/ojdbc/ojdbc8/19.3.0.0/oraclepki.jar
+2020-03-05 11:34:47.589  INFO 4808 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Maven_Repository\com\oracle\ojdbc\oraclepki\19.3.0.0\oraclepki-19.3.0.0.jar referenced one or more files that do not exist: file:/D:/Maven_Repository/com/oracle/ojdbc/oraclepki/19.3.0.0/osdt_core.jar,file:/D:/Maven_Repository/com/oracle/ojdbc/oraclepki/19.3.0.0/osdt_cert.jar,file:/D:/Maven_Repository/com/oracle/ojdbc/oraclepki/oracle.osdt/osdt_core.jar,file:/D:/Maven_Repository/com/oracle/ojdbc/oraclepki/oracle.osdt/osdt_cert.jar
+2020-03-05 11:34:47.589  INFO 4808 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Maven_Repository\cn\easyproject\orai18n\12.1.0.2.0\orai18n-12.1.0.2.0.jar referenced one or more files that do not exist: file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/orai18n-mapping.jar,file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/orai18n-utility.jar,file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/orai18n-collation.jar,file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/orai18n-translation.jar,file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/orai18n-net.jar,file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/orai18n-servlet.jar,file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/orai18n-lcsd.jar,file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/orai18n-tools.jar,file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/gdk_custom.jar
+2020-03-05 11:34:47.589  INFO 4808 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-05 11:34:47.589  INFO 4808 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-05 11:34:48.979  INFO 4808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-05 11:34:48.979  INFO 4808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-03-05 11:34:49.041  INFO 4808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39ms. Found 0 repository interfaces.
+2020-03-05 11:34:49.494  INFO 4808 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.dream.itclub.conf.RedisConfig$$EnhancerBySpringCGLIB$$23a1c427] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-05 11:34:49.510  INFO 4808 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-05 11:34:50.119  INFO 4808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-05 11:34:50.135  INFO 4808 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-05 11:34:50.135  INFO 4808 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-03-05 11:34:50.260  INFO 4808 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-05 11:34:50.260  INFO 4808 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2671 ms
+2020-03-05 11:34:50.618  WARN 4808 --- [restartedMain] c.a.druid.pool.DruidAbstractDataSource   : oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2020-03-05 11:34:52.111  INFO 4808 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-05 11:34:52.330  INFO 4808 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-05 11:34:53.345  INFO 4808 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-05 11:34:53.564  INFO 4808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-05 11:34:53.564  INFO 4808 --- [restartedMain] com.dream.itclub.ItclubApplication       : Started ItclubApplication in 6.962 seconds (JVM running for 9.288)
+2020-03-05 11:34:53.798  INFO 4808 --- [http-nio-8080-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-05 11:34:53.798  INFO 4808 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-05 11:34:53.814  INFO 4808 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-03-05 11:34:54.957  INFO 4808 --- [http-nio-8080-exec-9] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-03-05 11:34:54.959  INFO 4808 --- [http-nio-8080-exec-9] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-03-05 11:34:57.024  INFO 4808 --- [http-nio-8080-exec-10] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-03-05 11:34:57.033 DEBUG 4808 --- [http-nio-8080-exec-9] c.d.i.d.c.C.orderDescList                : ==>  Preparing: select b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS from ( select * from blog order by bpvnum DESC )b where rownum <= 10 
+2020-03-05 11:34:57.070 DEBUG 4808 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID 
+2020-03-05 11:34:57.152 DEBUG 4808 --- [http-nio-8080-exec-9] c.d.i.d.c.C.orderDescList                : ==> Parameters: 
+2020-03-05 11:34:57.152 DEBUG 4808 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 
+2020-03-05 11:34:57.182 DEBUG 4808 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:34:57.188 DEBUG 4808 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:34:57.194 DEBUG 4808 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 3(Integer)
+2020-03-05 11:34:57.199 DEBUG 4808 --- [http-nio-8080-exec-9] c.d.i.d.c.C.orderDescList                : <==      Total: 9
+2020-03-05 11:34:57.206 DEBUG 4808 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:35:07.452 DEBUG 4808 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID 
+2020-03-05 11:35:07.452 DEBUG 4808 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 
+2020-03-05 11:35:07.452 DEBUG 4808 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:35:07.452 DEBUG 4808 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:35:07.452 DEBUG 4808 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 3(Integer)
+2020-03-05 11:35:07.467 DEBUG 4808 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:35:07.514 DEBUG 4808 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:35:07.514 DEBUG 4808 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 0af8c86a25ed41ea817a7dbbf47a1ea7(String)
+2020-03-05 11:35:07.530 DEBUG 4808 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:35:07.530 DEBUG 4808 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:35:07.530 DEBUG 4808 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 0af8c86a25ed41ea817a7dbbf47a1ea7(String), 3(Integer)
+2020-03-05 11:35:07.530 DEBUG 4808 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog               : <==      Total: 1
+2020-03-05 11:35:07.546 DEBUG 4808 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:35:07.561 DEBUG 4808 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String)
+2020-03-05 11:35:07.561 DEBUG 4808 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:35:07.561 DEBUG 4808 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:35:07.561 DEBUG 4808 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String), 3(Integer)
+2020-03-05 11:35:07.561 DEBUG 4808 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:35:07.592 DEBUG 4808 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:35:07.592 DEBUG 4808 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String)
+2020-03-05 11:35:07.592 DEBUG 4808 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:35:07.592 DEBUG 4808 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:35:07.592 DEBUG 4808 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String), 3(Integer)
+2020-03-05 11:35:07.624 DEBUG 4808 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog               : <==      Total: 2
+2020-03-05 11:35:10.546 DEBUG 4808 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID 
+2020-03-05 11:35:10.546 DEBUG 4808 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 
+2020-03-05 11:35:10.550 DEBUG 4808 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:35:10.552 DEBUG 4808 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:35:10.553 DEBUG 4808 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 3(Integer)
+2020-03-05 11:35:10.560 DEBUG 4808 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:35:13.532 DEBUG 4808 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID 
+2020-03-05 11:35:13.532 DEBUG 4808 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 
+2020-03-05 11:35:13.535 DEBUG 4808 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:35:13.537 DEBUG 4808 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:35:13.538 DEBUG 4808 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 3(Integer)
+2020-03-05 11:35:13.552 DEBUG 4808 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:35:24.176 DEBUG 4808 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID 
+2020-03-05 11:35:24.178 DEBUG 4808 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 
+2020-03-05 11:35:24.183 DEBUG 4808 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:35:24.188 DEBUG 4808 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:35:24.189 DEBUG 4808 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 3(Integer)
+2020-03-05 11:35:24.196 DEBUG 4808 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:35:48.352 DEBUG 4808 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:35:48.352 DEBUG 4808 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 0(String)
+2020-03-05 11:35:48.368 DEBUG 4808 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:35:48.493 DEBUG 4808 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:35:48.493 DEBUG 4808 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String)
+2020-03-05 11:35:48.493 DEBUG 4808 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:35:48.493 DEBUG 4808 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:35:48.493 DEBUG 4808 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String), 3(Integer)
+2020-03-05 11:35:48.508 DEBUG 4808 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog               : <==      Total: 2
+2020-03-05 11:35:50.091 DEBUG 4808 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID 
+2020-03-05 11:35:50.092 DEBUG 4808 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 
+2020-03-05 11:35:50.116 DEBUG 4808 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:35:50.117 DEBUG 4808 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:35:50.118 DEBUG 4808 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 3(Integer)
+2020-03-05 11:35:50.153 DEBUG 4808 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:35:53.463 DEBUG 4808 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID 
+2020-03-05 11:35:53.465 DEBUG 4808 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 
+2020-03-05 11:35:53.468 DEBUG 4808 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:35:53.469 DEBUG 4808 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:35:53.470 DEBUG 4808 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 3(Integer)
+2020-03-05 11:35:53.478 DEBUG 4808 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:37:24.981  INFO 4808 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-05 11:37:25.122  INFO 4808 --- [Thread-16] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-03-05 11:37:25.965  INFO 4808 --- [restartedMain] com.dream.itclub.ItclubApplication       : Starting ItclubApplication on DESKTOP-QNVVKMQ with PID 4808 (D:\IDEAPOJ\itclub\target\classes started by hr in D:\IDEAPOJ\itclub)
+2020-03-05 11:37:25.965  INFO 4808 --- [restartedMain] com.dream.itclub.ItclubApplication       : No active profile set, falling back to default profiles: default
+2020-03-05 11:37:26.450  INFO 4808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-05 11:37:26.450  INFO 4808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-03-05 11:37:26.465  INFO 4808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
+2020-03-05 11:37:26.606  INFO 4808 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.dream.itclub.conf.RedisConfig$$EnhancerBySpringCGLIB$$23a1c427] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-05 11:37:26.606  INFO 4808 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-05 11:37:26.668  WARN 4808 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-03-05 11:37:26.731  INFO 4808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-05 11:37:26.731  INFO 4808 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-05 11:37:26.731  INFO 4808 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-03-05 11:37:26.746  INFO 4808 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-05 11:37:26.746  INFO 4808 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 765 ms
+2020-03-05 11:37:26.793  WARN 4808 --- [restartedMain] c.a.druid.pool.DruidAbstractDataSource   : oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2020-03-05 11:37:27.074  INFO 4808 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-05 11:37:27.106  INFO 4808 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-05 11:37:27.277  INFO 4808 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-05 11:37:27.324  INFO 4808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-05 11:37:27.340  INFO 4808 --- [restartedMain] com.dream.itclub.ItclubApplication       : Started ItclubApplication in 1.425 seconds (JVM running for 163.051)
+2020-03-05 11:37:27.340  INFO 4808 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-03-05 11:38:09.268  INFO 11756 --- [restartedMain] com.dream.itclub.ItclubApplication       : Starting ItclubApplication on DESKTOP-QNVVKMQ with PID 11756 (D:\IDEAPOJ\itclub\target\classes started by hr in D:\IDEAPOJ\itclub)
+2020-03-05 11:38:09.268  INFO 11756 --- [restartedMain] com.dream.itclub.ItclubApplication       : No active profile set, falling back to default profiles: default
+2020-03-05 11:38:09.581  INFO 11756 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Maven_Repository\com\oracle\ojdbc\ojdbc8\19.3.0.0\ojdbc8-19.3.0.0.jar referenced one or more files that do not exist: file:/D:/Maven_Repository/com/oracle/ojdbc/ojdbc8/19.3.0.0/oraclepki.jar
+2020-03-05 11:38:09.581  INFO 11756 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Maven_Repository\com\oracle\ojdbc\oraclepki\19.3.0.0\oraclepki-19.3.0.0.jar referenced one or more files that do not exist: file:/D:/Maven_Repository/com/oracle/ojdbc/oraclepki/19.3.0.0/osdt_core.jar,file:/D:/Maven_Repository/com/oracle/ojdbc/oraclepki/19.3.0.0/osdt_cert.jar,file:/D:/Maven_Repository/com/oracle/ojdbc/oraclepki/oracle.osdt/osdt_core.jar,file:/D:/Maven_Repository/com/oracle/ojdbc/oraclepki/oracle.osdt/osdt_cert.jar
+2020-03-05 11:38:09.581  INFO 11756 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\Maven_Repository\cn\easyproject\orai18n\12.1.0.2.0\orai18n-12.1.0.2.0.jar referenced one or more files that do not exist: file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/orai18n-mapping.jar,file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/orai18n-utility.jar,file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/orai18n-collation.jar,file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/orai18n-translation.jar,file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/orai18n-net.jar,file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/orai18n-servlet.jar,file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/orai18n-lcsd.jar,file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/orai18n-tools.jar,file:/D:/Maven_Repository/cn/easyproject/orai18n/12.1.0.2.0/gdk_custom.jar
+2020-03-05 11:38:09.581  INFO 11756 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-05 11:38:09.581  INFO 11756 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-05 11:38:10.909  INFO 11756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-05 11:38:10.909  INFO 11756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-03-05 11:38:10.940  INFO 11756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2020-03-05 11:38:11.299  INFO 11756 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.dream.itclub.conf.RedisConfig$$EnhancerBySpringCGLIB$$10e07661] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-05 11:38:11.299  INFO 11756 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-05 11:38:11.658  INFO 11756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-05 11:38:11.674  INFO 11756 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-05 11:38:11.674  INFO 11756 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-03-05 11:38:11.768  INFO 11756 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-05 11:38:11.768  INFO 11756 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2187 ms
+2020-03-05 11:38:11.908  WARN 11756 --- [restartedMain] c.a.druid.pool.DruidAbstractDataSource   : oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2020-03-05 11:38:12.924  INFO 11756 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-05 11:38:13.002  INFO 11756 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-05 11:38:13.424  INFO 11756 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-05 11:38:13.517  INFO 11756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-05 11:38:13.517  INFO 11756 --- [restartedMain] com.dream.itclub.ItclubApplication       : Started ItclubApplication in 5.177 seconds (JVM running for 6.7)
+2020-03-05 11:38:18.629  INFO 11756 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-05 11:38:18.629  INFO 11756 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-05 11:38:18.645  INFO 11756 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-03-05 11:38:22.456  INFO 11756 --- [http-nio-8080-exec-5] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-03-05 11:38:22.456  INFO 11756 --- [http-nio-8080-exec-5] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-03-05 11:38:23.862  INFO 11756 --- [http-nio-8080-exec-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-03-05 11:38:23.909 DEBUG 11756 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:38:23.909 DEBUG 11756 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID 
+2020-03-05 11:38:23.909 DEBUG 11756 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:38:23.987 DEBUG 11756 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 
+2020-03-05 11:38:23.987 DEBUG 11756 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 0(String)
+2020-03-05 11:38:23.987 DEBUG 11756 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 0(String)
+2020-03-05 11:38:24.019 DEBUG 11756 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:38:24.019 DEBUG 11756 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:38:24.019 DEBUG 11756 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:38:24.019 DEBUG 11756 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:38:24.019 DEBUG 11756 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 3(Integer)
+2020-03-05 11:38:24.065 DEBUG 11756 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:38:40.374 DEBUG 11756 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID 
+2020-03-05 11:38:40.374 DEBUG 11756 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 
+2020-03-05 11:38:40.390 DEBUG 11756 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:38:40.390 DEBUG 11756 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:38:40.405 DEBUG 11756 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 3(Integer)
+2020-03-05 11:38:40.405 DEBUG 11756 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID 
+2020-03-05 11:38:40.405 DEBUG 11756 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 
+2020-03-05 11:38:40.405 DEBUG 11756 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:38:40.405 DEBUG 11756 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:38:40.405 DEBUG 11756 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 3(Integer)
+2020-03-05 11:38:40.405 DEBUG 11756 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:38:40.421 DEBUG 11756 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:38:40.437 DEBUG 11756 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:38:40.437 DEBUG 11756 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 0af8c86a25ed41ea817a7dbbf47a1ea7(String)
+2020-03-05 11:38:40.437 DEBUG 11756 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:38:40.452 DEBUG 11756 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:38:40.452 DEBUG 11756 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 0af8c86a25ed41ea817a7dbbf47a1ea7(String), 3(Integer)
+2020-03-05 11:38:40.452 DEBUG 11756 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog               : <==      Total: 1
+2020-03-05 11:38:40.468 DEBUG 11756 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:38:40.468 DEBUG 11756 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String)
+2020-03-05 11:38:40.468 DEBUG 11756 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:38:40.468 DEBUG 11756 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:38:40.468 DEBUG 11756 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String), 3(Integer)
+2020-03-05 11:38:40.468 DEBUG 11756 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:38:40.484 DEBUG 11756 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:38:40.484 DEBUG 11756 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String)
+2020-03-05 11:38:40.484 DEBUG 11756 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:38:40.484 DEBUG 11756 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:38:40.484 DEBUG 11756 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String), 3(Integer)
+2020-03-05 11:38:40.499 DEBUG 11756 --- [http-nio-8080-exec-5] c.d.i.d.c.C.findCustomBlog               : <==      Total: 2
+2020-03-05 11:38:40.562 DEBUG 11756 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:38:40.577 DEBUG 11756 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String)
+2020-03-05 11:38:40.577 DEBUG 11756 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:38:40.577 DEBUG 11756 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:38:40.577 DEBUG 11756 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String), 3(Integer)
+2020-03-05 11:38:40.593 DEBUG 11756 --- [http-nio-8080-exec-1] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:38:41.499 DEBUG 11756 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:38:41.515 DEBUG 11756 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String)
+2020-03-05 11:38:41.515 DEBUG 11756 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:38:41.515 DEBUG 11756 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:38:41.515 DEBUG 11756 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String), 3(Integer)
+2020-03-05 11:38:41.515 DEBUG 11756 --- [http-nio-8080-exec-2] c.d.i.d.c.C.findCustomBlog               : <==      Total: 2
+2020-03-05 11:38:41.889 DEBUG 11756 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:38:41.889 DEBUG 11756 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String)
+2020-03-05 11:38:41.905 DEBUG 11756 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:38:41.905 DEBUG 11756 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:38:41.905 DEBUG 11756 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 16e8c0266a8c4bd3b6052eff63e8dab9(String), 3(Integer)
+2020-03-05 11:38:41.905 DEBUG 11756 --- [http-nio-8080-exec-6] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:38:42.717 DEBUG 11756 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:38:42.717 DEBUG 11756 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String)
+2020-03-05 11:38:42.717 DEBUG 11756 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:38:42.717 DEBUG 11756 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:38:42.717 DEBUG 11756 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String), 3(Integer)
+2020-03-05 11:38:42.717 DEBUG 11756 --- [http-nio-8080-exec-7] c.d.i.d.c.C.findCustomBlog               : <==      Total: 2
+2020-03-05 11:38:43.092 DEBUG 11756 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:38:43.092 DEBUG 11756 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String)
+2020-03-05 11:38:43.092 DEBUG 11756 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:38:43.092 DEBUG 11756 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND t.TYPEID = ? ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:38:43.092 DEBUG 11756 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 1d2b1b1c2b60494e873497cf5f296ea3(String), 3(Integer)
+2020-03-05 11:38:43.108 DEBUG 11756 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog               : <==      Total: 2
+2020-03-05 11:38:43.826 DEBUG 11756 --- [http-nio-8080-exec-3] c.d.i.dao.CommentsMapper.findComments    : ==>  Preparing: select s.uname,s.userid,s.imagepath,com.comcontent,com.comgoodnum,com.comdatetime,com.comid,b.bid from blog b,sysuser s,comments com WHERE com.bid=b.bid and com.userid=s.userid and com.bid=? order by com.comdatetime desc 
+2020-03-05 11:38:43.826 DEBUG 11756 --- [http-nio-8080-exec-3] c.d.i.dao.CommentsMapper.findComments    : ==> Parameters: 4f128aebce4c41ab8c778379fbbfe092(String)
+2020-03-05 11:38:43.842 DEBUG 11756 --- [http-nio-8080-exec-3] c.d.i.dao.CommentsMapper.findComments    : <==      Total: 0
+2020-03-05 11:38:54.730 DEBUG 11756 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID 
+2020-03-05 11:38:54.730 DEBUG 11756 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 
+2020-03-05 11:38:54.746 DEBUG 11756 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:38:54.746 DEBUG 11756 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:38:54.746 DEBUG 11756 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 3(Integer)
+2020-03-05 11:38:54.761 DEBUG 11756 --- [http-nio-8080-exec-4] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:38:54.761  WARN 11756 --- [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.apache.catalina.connector.ClientAbortException: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。]
+2020-03-05 11:38:54.777 ERROR 11756 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: getOutputStream() has already been called for this response] with root cause
+
+java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.apache.catalina.connector.Response.getWriter(Response.java:581) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:227) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:360) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373) ~[spring-webmvc-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118) ~[spring-webmvc-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057) ~[spring-webmvc-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+
+2020-03-05 11:39:11.601 DEBUG 11756 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:39:11.601 DEBUG 11756 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 0(String)
+2020-03-05 11:39:11.601 DEBUG 11756 --- [http-nio-8080-exec-3] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:39:18.302 DEBUG 11756 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID AND b.BID = ? ORDER BY b.bpublishtime DESC 
+2020-03-05 11:39:18.302 DEBUG 11756 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: de5b6f43b9aa42398ee87a5bc77b975e(String)
+2020-03-05 11:39:18.302 DEBUG 11756 --- [http-nio-8080-exec-10] c.d.i.d.c.C.findCustomBlog               : <==      Total: 1
+2020-03-05 11:39:18.333 DEBUG 11756 --- [http-nio-8080-exec-10] c.d.i.dao.CommentsMapper.findComments    : ==>  Preparing: select s.uname,s.userid,s.imagepath,com.comcontent,com.comgoodnum,com.comdatetime,com.comid,b.bid from blog b,sysuser s,comments com WHERE com.bid=b.bid and com.userid=s.userid and com.bid=? order by com.comdatetime desc 
+2020-03-05 11:39:18.333 DEBUG 11756 --- [http-nio-8080-exec-10] c.d.i.dao.CommentsMapper.findComments    : ==> Parameters: de5b6f43b9aa42398ee87a5bc77b975e(String)
+2020-03-05 11:39:18.333 DEBUG 11756 --- [http-nio-8080-exec-10] c.d.i.dao.CommentsMapper.findComments    : <==      Total: 0
+2020-03-05 11:39:20.395 DEBUG 11756 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID 
+2020-03-05 11:39:20.395 DEBUG 11756 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 
+2020-03-05 11:39:20.395 DEBUG 11756 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1
+2020-03-05 11:39:20.395 DEBUG 11756 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog               : ==>  Preparing: SELECT TMP_PAGE.*, ROWNUM ROW_ID FROM ( SELECT b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS , u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME , t.TYPEID, t.TYPENAME FROM BLOG b,SYSUSER u,BLOGTYPE t WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID ORDER BY b.bpublishtime DESC ) TMP_PAGE WHERE ROWNUM <= ? 
+2020-03-05 11:39:20.411 DEBUG 11756 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog               : ==> Parameters: 3(Integer)
+2020-03-05 11:39:20.411 DEBUG 11756 --- [http-nio-8080-exec-9] c.d.i.d.c.C.findCustomBlog               : <==      Total: 3
+2020-03-05 11:39:23.535 DEBUG 11756 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog_COUNT         : ==>  Preparing: SELECT count(0) FROM BLOG b, SYSUSER u, BLOGTYPE t WHERE b.USERID = u.USERID AND b.TYPEID = t.TYPEID AND t.TYPEID = ? 
+2020-03-05 11:39:23.535 DEBUG 11756 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog_COUNT         : ==> Parameters: 0(String)
+2020-03-05 11:39:23.535 DEBUG 11756 --- [http-nio-8080-exec-8] c.d.i.d.c.C.findCustomBlog_COUNT         : <==      Total: 1

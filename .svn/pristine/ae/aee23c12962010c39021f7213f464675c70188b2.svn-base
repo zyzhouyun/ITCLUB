@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dream.itclub.dao.MessageMapper">
+  <resultMap id="BaseResultMap" type="com.dream.itclub.pojo.Message">
+    <id column="MSGID" jdbcType="VARCHAR" property="msgid" />
+    <result column="USERID" jdbcType="VARCHAR" property="userid" />
+    <result column="MSGCONTENT" jdbcType="VARCHAR" property="msgcontent" />
+    <result column="MSGTIME" jdbcType="TIMESTAMP" property="msgtime" />
+    <result column="MESSAGEUSER" jdbcType="VARCHAR" property="messageuser" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    MSGID, USERID, MSGCONTENT, MSGTIME, MESSAGEUSER
+  </sql>
+  <select id="selectByExample" parameterType="com.dream.itclub.pojo.MessageExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from MESSAGE
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from MESSAGE
+    where MSGID = #{msgid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from MESSAGE
+    where MSGID = #{msgid,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.dream.itclub.pojo.MessageExample">
+    delete from MESSAGE
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.dream.itclub.pojo.Message">
+    insert into MESSAGE (MSGID, USERID, MSGCONTENT, 
+      MSGTIME, MESSAGEUSER)
+    values (#{msgid,jdbcType=VARCHAR}, #{userid,jdbcType=VARCHAR}, #{msgcontent,jdbcType=VARCHAR}, 
+      #{msgtime,jdbcType=TIMESTAMP}, #{messageuser,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.dream.itclub.pojo.Message">
+    insert into MESSAGE
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="msgid != null">
+        MSGID,
+      </if>
+      <if test="userid != null">
+        USERID,
+      </if>
+      <if test="msgcontent != null">
+        MSGCONTENT,
+      </if>
+      <if test="msgtime != null">
+        MSGTIME,
+      </if>
+      <if test="messageuser != null">
+        MESSAGEUSER,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="msgid != null">
+        #{msgid,jdbcType=VARCHAR},
+      </if>
+      <if test="userid != null">
+        #{userid,jdbcType=VARCHAR},
+      </if>
+      <if test="msgcontent != null">
+        #{msgcontent,jdbcType=VARCHAR},
+      </if>
+      <if test="msgtime != null">
+        #{msgtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="messageuser != null">
+        #{messageuser,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.dream.itclub.pojo.MessageExample" resultType="java.lang.Long">
+    select count(*) from MESSAGE
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update MESSAGE
+    <set>
+      <if test="record.msgid != null">
+        MSGID = #{record.msgid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.userid != null">
+        USERID = #{record.userid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.msgcontent != null">
+        MSGCONTENT = #{record.msgcontent,jdbcType=VARCHAR},
+      </if>
+      <if test="record.msgtime != null">
+        MSGTIME = #{record.msgtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.messageuser != null">
+        MESSAGEUSER = #{record.messageuser,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update MESSAGE
+    set MSGID = #{record.msgid,jdbcType=VARCHAR},
+      USERID = #{record.userid,jdbcType=VARCHAR},
+      MSGCONTENT = #{record.msgcontent,jdbcType=VARCHAR},
+      MSGTIME = #{record.msgtime,jdbcType=TIMESTAMP},
+      MESSAGEUSER = #{record.messageuser,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dream.itclub.pojo.Message">
+    update MESSAGE
+    <set>
+      <if test="userid != null">
+        USERID = #{userid,jdbcType=VARCHAR},
+      </if>
+      <if test="msgcontent != null">
+        MSGCONTENT = #{msgcontent,jdbcType=VARCHAR},
+      </if>
+      <if test="msgtime != null">
+        MSGTIME = #{msgtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="messageuser != null">
+        MESSAGEUSER = #{messageuser,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where MSGID = #{msgid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dream.itclub.pojo.Message">
+    update MESSAGE
+    set USERID = #{userid,jdbcType=VARCHAR},
+      MSGCONTENT = #{msgcontent,jdbcType=VARCHAR},
+      MSGTIME = #{msgtime,jdbcType=TIMESTAMP},
+      MESSAGEUSER = #{messageuser,jdbcType=VARCHAR}
+    where MSGID = #{msgid,jdbcType=VARCHAR}
+  </update>
+
+  <resultMap id="messageMap" type="com.dream.itclub.pojo.custom.CustomMessage">
+    <id property="msgid" column="MSGID"></id>
+    <result property="userid" column="USERID"/>
+    <result property="msgcontent" column="MSGCONTENT"/>
+    <result property="msgtime" column="MSGTIME"/>
+    <result property="messageuser" column="MESSAGEUSER"/>
+    <association property="sysUser" javaType="com.dream.itclub.pojo.SysUser">
+      <id property="userid" column="USERID"/>
+      <result property="uname" column="UNAME"/>
+      <result property="imagepath" column="IMAGEPATH"/>
+    </association>
+  </resultMap>
+  <select id="findMessage" parameterType="java.lang.String" resultMap="messageMap">
+    select t.msgid,t.userid,t.msgcontent,t.msgtime,t.messageuser,s.userid,s.uname,s.imagepath from message t,sysuser s
+    <where>
+      t.userid=s.userid
+      and t.userid=#{id} order by t.msgtime desc
+    </where>
+  </select>
+
+  <select id="findMessageByMsgId" parameterType="java.lang.String" resultMap="messageMap">
+    select t.msgid,t.userid,t.msgcontent,t.msgtime,t.messageuser,s.userid,s.uname,s.imagepath from message t,sysuser s
+    <where>
+      t.userid=s.userid
+      and t.msgid=#{id}
+    </where>
+  </select>
+
+</mapper>

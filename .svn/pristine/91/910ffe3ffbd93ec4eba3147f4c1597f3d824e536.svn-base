@@ -1,0 +1,29 @@
+package com.dream.itclub.pojo.custom;
+
+import com.dream.itclub.pojo.Blog;
+import com.dream.itclub.pojo.Comments;
+import com.dream.itclub.pojo.SysUser;
+
+/**
+ * 自定义评论
+ */
+public class CustomComments extends Comments {
+    private SysUser sysUser;//关联用户表
+    private Blog blog;//关联博客表
+
+    public SysUser getSysUser() {
+        return sysUser;
+    }
+
+    public void setSysUser(SysUser sysUser) {
+        this.sysUser = sysUser;
+    }
+
+    public Blog getBlog() {
+        return blog;
+    }
+
+    public void setBlog(Blog blog) {
+        this.blog = blog;
+    }
+}

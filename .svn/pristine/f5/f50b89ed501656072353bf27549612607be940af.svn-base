@@ -1,0 +1,7 @@
+package com.dream.itclub.service;
+
+import com.dream.itclub.pojo.SysUser;
+
+public interface SysUserService {
+    public SysUser selectUser(SysUser user) throws Exception;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册</title>
+<link type="text/css" rel="stylesheet" href="css/zhuce.css" />
+<script type="text/javascript" src="js/zhuce.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+	var height=$(document).height();
+	$('.main').css('height',height);
+})
+</script>
+</head>
+
+<body>
+<div class="main">
+  <div class="main0">
+     <div class="main_left">
+        <img src="images/zhuce-image-3.png" class="theimg"/>
+        <img src="images/zhuce-image-2.png" class="secimg"/>
+        <img src="images/zhuce-image-1.png" class="firimg"/>
+     </div>
+     <div class="main_right">
+        <div class="main_r_up">
+            <img src="images/user.png" />
+            <div class="pp">注册</div>
+        </div>
+        <div class="sub"><p>已经注册？<a th:href="@{/goUserLogin}"><span class="blue">请登录</span></a></p></div>
+         <form th:action="@{/doregistered}">
+             <input id="phone" name="phone" th:value="${session.phone}" type="hidden"/>
+             <div class="txt txt0">
+                 <span style="float:left">短信验证码:</span>
+                 <input name="validation" id="validation" type="text" placeholder="请输入短信验证码" class="txtyzmdx"/><input name="getCaptcha" type="button" id="getCaptcha" style="background-color: #30adfa" value="获取验证码">
+             </div>
+             <div class="txt txt0">
+                 <span style="letter-spacing:8px;">用户名:</span>
+                 <input name="uname" id="uname" type="text" class="txtphone" placeholder="请输入用户名"/>
+             </div>
+             <div class="txt txt0">
+                 <span style="letter-spacing:4px;">登录密码:</span>
+                 <input name="pwd" type="password" id="pwd" class="txtphone" placeholder="请输入密码"/>
+             </div>
+             <div class="txt txt0">
+                 <span style="letter-spacing:4px;">重复密码:</span>
+                 <input name="pwd1" type="password" id="pwd1" class="txtphone" placeholder="请再次输入密码"/>
+             </div>
+             <div class="txt txt0">
+                 <a th:href="@{/gozhuce}"><span style=" float:left;color:#31acfb">返回上一步</span></a>
+                 <input value="确认注册" class="zhucebtn" type="submit" id="zhuce">
+             </div>
+         </form>
+     </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer0">
+     <div class="footer_l">使用条款 | 隐私保护</div>
+     <div class="footer_r">© Rocket-ItClub</div>
+  </div> 
+</div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+    $(function () {
+        var i = 1;//一定时间内获取验证码的次数
+        var num = 60;//验证码倒计时
+        $("#getCaptcha").click(function () {
+            var phone = $("#phone").val();//获取手机号文本框中的value值
+            //做一些必要的判断
+            if (null == phone || phone == "") {
+                alert("手机号不能为空");
+                return;
+            } else if (isNaN(phone)) {
+                alert("请输入数字");
+                return;
+            } else if (phone.length != 11) {
+                alert("请输入11位手机号");
+                return;
+            }
+            if ($("#getCaptcha").val() == "获取验证码") {//如果获取验证码按钮value为获取验证码则进行获取操作，否则不获取
+
+                var dinshi = window.setInterval(function () {//间隔1秒执行一次，周而复始
+                    num--;//倒计时
+                    $("#getCaptcha").val("已发送(" + num + ")");//点击获取验证码按钮改变按钮value为已发送，及倒计时
+                    if (num == 0) {//否则，为零则停止倒计时
+                        num = 60;
+                        clearInterval(dinshi);
+                    }
+                }, 1000);
+            }
+
+            //停止定时器
+            function clearInterval(data) {
+                window.clearInterval(dinshi);
+                $("#getCaptcha").val("获取验证码");
+            }
+
+            //ajax验证，输入的手机验证码是否正确
+            $.ajax({
+                url: "phoneCaptcha",
+                type: "post",
+                data: {phone: phone},
+                dataType: "json",
+                success: function (data) {
+                    alert(data);
+                    if (data > 0) {
+                        smsCode = data;//保存返回的验证码
+                    } else if (data == -4) {
+                        alert("手机号格式不正确");
+                    } else if (data == -41) {
+                        alert("手机号码为空");
+                    }
+                }, error: function () {
+                    alert("出现异常！请联系管理员");
+                }
+            });
+        });
+
+        $("#zhuce").click(function () {
+            var pwd = $("#pwd").val();
+            var pwd1 = $("#pwd1").val();
+            var uname = $("#uname").val();
+            var validation = $("#validation").val();
+            if (validation=="") {
+                alert("请获取验证码！");
+                return false;
+            }
+            if (pwd != pwd1) {
+                alert("两次密码不一致");
+                return false;
+            }
+            if (pwd == "") {
+                alert("请填写密码");
+                return false;
+            }
+            if (pwd == "") {
+                alert("请填写确认密码");
+                return false;
+            }
+        })
+
+        $("#validation").blur(function () {
+            var validation = $("#validation").val();
+            if (smsCode != validation) {
+                alert("您输入的验证码不正确！，请重新输入。");
+                $("#validation").val("");
+            } else {
+                alert("通过");
+            }
+        });
+    });
+</script>
+</html>

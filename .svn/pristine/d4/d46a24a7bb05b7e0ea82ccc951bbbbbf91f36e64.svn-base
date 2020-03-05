@@ -1,0 +1,29 @@
+package com.dream.itclub.service.impl;
+
+import com.dream.itclub.dao.BlogMapper;
+import com.dream.itclub.dao.custom.CustomBlogMapper;
+import com.dream.itclub.pojo.custom.CustomBlog;
+import com.dream.itclub.service.ICustomBlogService;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
+import java.util.List;
+
+@Service
+public class CustomBlogServiceImpl implements ICustomBlogService {
+
+
+    @Resource private CustomBlogMapper customBlogMapper;
+
+    @Resource private BlogMapper blogMapper;
+
+    @Override
+    public List<CustomBlog> findCustomBlogService(CustomBlog customBlog) throws Exception {
+
+        List<CustomBlog> customBlogList = customBlogMapper.findCustomBlog(customBlog);
+        return customBlogList;
+    }
+
+
+
+}

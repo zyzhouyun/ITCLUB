@@ -1,0 +1,127 @@
+package com.dream.itclub.handler;
+
+import com.alipay.api.AlipayApiException;
+import com.alipay.api.AlipayClient;
+import com.alipay.api.DefaultAlipayClient;
+import com.alipay.api.request.AlipayTradePagePayRequest;
+import com.dream.itclub.pojo.SysUser;
+import com.dream.itclub.utils.AlipayConfig;
+import com.dream.itclub.utils.UUIDUtil;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+@RequestMapping("alipay")
+@Controller
+public class AliPayHandler {
+
+    @RequestMapping(value = "/buyMember")
+    public void buyMember(Double price, HttpServletResponse response) throws IOException {
+        String memberid = UUIDUtil.createUUID();        //订单号;会员id
+        String memberName ="VIP";
+
+        AlipayClient alipayClient = new DefaultAlipayClient(AlipayConfig.gatewayUrl, AlipayConfig.app_id, AlipayConfig.merchant_private_key, "json", AlipayConfig.charset, AlipayConfig.alipay_public_key, AlipayConfig.sign_type);
+
+        //设置请求参数
+        AlipayTradePagePayRequest alipayRequest = new AlipayTradePagePayRequest();
+        alipayRequest.setReturnUrl(AlipayConfig.return_url);
+        alipayRequest.setNotifyUrl(AlipayConfig.notify_url);
+
+        //商户订单号
+        String out_trade_no = new String(memberid.getBytes("ISO-8859-1"),"UTF-8");
+        //付款金额
+        String total_amount = new String((price+"").getBytes("ISO-8859-1"),"UTF-8");
+        //订单名称
+        String subject = new String(memberName.getBytes("ISO-8859-1"),"UTF-8");
+        //商品描述
+        String body = new String(memberName.getBytes("ISO-8859-1"),"UTF-8");
+
+        alipayRequest.setBizContent("{\"out_trade_no\":\""+ out_trade_no +"\","
+                + "\"total_amount\":\""+ total_amount +"\","
+                + "\"subject\":\""+ subject +"\","
+                + "\"body\":\""+ body +"\","
+                + "\"product_code\":\"FAST_INSTANT_TRADE_PAY\"}");
+
+        String result = null;
+        try {
+            result = alipayClient.pageExecute(alipayRequest).getBody();
+        } catch (AlipayApiException e) {
+            e.printStackTrace();
+        }
+        response.getWriter().write(result);
+    }
+
+
+
+    @RequestMapping("/returnURL")
+    public String returnURL(HttpServletRequest request){
+        Map<String,String[]> parameterMap = new HashMap<>();
+
+        parameterMap =request.getParameterMap();
+
+        for (Map.Entry<String,String[]> map : parameterMap.entrySet()){
+            System.out.println(map.getKey()+":"+map.getValue());
+            for(String param : map.getValue()){
+                System.out.println(param);
+            }
+        }
+
+        System.out.println(parameterMap);
+
+        /**
+         * charset:[Ljava.lang.String;@676ff6f2
+         * utf-8
+         * out_trade_no:[Ljava.lang.String;@1bbd99f5
+         * c7c7f12a66b648f998a83eee6938bce8
+         * method:[Ljava.lang.String;@7b2ebed1
+         * alipay.trade.page.pay.return
+         * total_amount:[Ljava.lang.String;@28def30
+         * 40.00
+         * sign:[Ljava.lang.String;@1acd41f5
+         * mR9UGGYCspCCXp4K9OE3xFNuA58//4kvYd/pdIkVuRTzlyx53dnaqKTZvrO2aOyWbF+Dh3Esx3PVk22kTWlHKJj0ZUQTV0JEqv48O+e9+u+yZO6nytwVpDHuQbZBMY8uttYWbTWCc2D9jCJUgV2elzlzGtHZaxzKwLV7eJEqRYRbwuD/+eV5g/DhomcMYnCG/zygXPJ6418aeWQYPcpJGMa9YR4G5KhoBjEoYOdPX7a+ZAqtwlb/AhGIFIcXaHhFdmkHB8pqHBLbYPPOjqtm0IHL6nSGfxDiy1bDSSkBqwNHAtUK/JIOCiMdVif7E27wygFWhGLj/AyDHi5FUNwr9A==
+         * trade_no:[Ljava.lang.String;@6d480168
+         * 2020020922001439891000073542
+         * auth_app_id:[Ljava.lang.String;@639ef226
+         * 2016101500691156
+         * version:[Ljava.lang.String;@e87750a
+         * 1.0
+         * app_id:[Ljava.lang.String;@7e355fc6
+         * 2016101500691156
+         * sign_type:[Ljava.lang.String;@53db5229
+         * RSA2
+         * seller_id:[Ljava.lang.String;@47c085b6
+         * 2088102179664734
+         * timestamp:[Ljava.lang.String;@72da9761
+         * 2020-02-09 16:41:35 ////购买时间
+         * org.apache.catalina.util.ParameterMap@26c52d93
+         */
+
+
+        String userId ;
+        SysUser sysUser =(SysUser) request.getSession().getAttribute("login");
+        if(sysUser!=null){
+            userId=sysUser.getUserid();
+        }else{
+            userId="4a27f9162a2649cfbda04ee634013462"; //user:zy
+        }
+
+    /*    if(this.price==15){
+            //一个月
+        }else if(this.price==40.00){
+            //3个月
+            System.out.println("40");
+        }else{
+            //12个月
+
+        }*/
+
+
+        return "homePage";
+    }
+
+}

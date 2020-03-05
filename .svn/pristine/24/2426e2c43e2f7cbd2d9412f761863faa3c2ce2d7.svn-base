@@ -1,0 +1,139 @@
+<html lang="zh-Hans-CN" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>我的自频道</title>
+    <link type="text/css" rel="stylesheet" href="/css/userInfo.css">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/layui/css/layui.css" />
+    <link rel="stylesheet" href="/css/master.css" />
+    <link rel="stylesheet" href="/css/gloable.css" />
+    <link rel="stylesheet" href="/css/nprogress.css" />
+    <link rel="stylesheet" href="/css/blog.css" />
+</head>
+<body>
+<div class="top">
+    <div class="top_controller">
+        <div class="con_ins">
+            <a href="javascript:void(0)" class="header-logo" id="logo">ITCLUB</a>
+            <div class="top_nav">
+                <ul>
+                    <li><a href="javascript:void(0)">首页</a></li>
+                    <li><a href="javascript:void(0)">发现</a></li>
+                    <li><a href="javascript:void(0)">订阅</a></li>
+                    <li><a href="javascript:void(0)">会员</a></li>
+                    <li><a href="javascript:void(0)">我的</a></li>
+                </ul>
+            </div>
+            <div class="top_cz">
+                <ul>
+                    <li class="img_box"><img th:src="@{/img/imgdf.png}"></li>
+                    <li><a href="#">消息</a></li>
+                    <li><a href="#">上传</a></li>
+                </ul>
+            </div>
+            <div class="top_seach_box">
+                <form>
+                    <input type="text" class="seach">
+                    <input type="submit" class="seach_btn" value="搜库">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="body">
+    <div class="body_ins_content">
+        <div class="ins_con_top">
+        </div>
+
+        <div class="ins_con_down">
+            <div class="con_down_left">
+                <img th:src="@{/img/imgdf.png}" class="user_maxImg">
+            </div>
+
+            <div class="con_down_right">
+                <div class="down_right_top">
+                   <input type="text" class="fx_box" placeholder="https://i.youku.com/i/%20UNDY0MzI4OTk4NA==">
+                    <button class="fx">分享</button>
+                </div>
+                <div class="down_right_down">
+                    <div class="cz_model">
+                        <span class="fs_num">粉丝数  0</span>
+                        <button class="cz"><a href="javascript:void(0)">创作中心</a></button>
+                    </div>
+
+                    <div class="right_down_user_info">
+                        <div class="down_user_info_top">
+                            <a href="javascript:void(0)" class="nickName" title="">Dear.十六夜</a>
+                        </div>
+                        <div class="down_user_info_down">
+                            <a href="javascript:void(0)" class="info_down_say">详细信息</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="lable_out_nav">
+        <div class="lable_nav">
+            <ul class="nav_menu">
+                <li><a href="javascript:void(0)">视频</a></li>
+                <li><a href="javascript:void(0)">收藏</a></li>
+                <li><a href="javascript:void(0)">播单</a></li>
+            </ul>
+
+            <div class="out_nav_seach">
+                <form>
+                    <input type="text" class="seach_box" placeholder="搜索视频">
+                    <button class="seach_btn">搜</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+<div class="con_out_main">
+    <div class="con_main_left">
+        <div class="main_left_top">
+            <div class="main_left_top_ins">
+                <h3 class="sp">博客</h3>
+                <font color="#909090">(<span class="sp_num">0</span>)</font>
+            </div>
+
+            <div class="main_left_down_ins">
+                <p class="sp_alt">您还没有上传过视频!</p>
+
+                <div class="upload_sp">
+                    <a href="#" class="do_upload">立即上传</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="con_main_right">
+        <div class="some_mini_game">
+            <h3 class="game_title">频道小游戏</h3>
+            <ul class="mini_games">
+                <li><a href="#">猜猜看</a></li>
+                <li><a href="#">贪吃蛇</a></li>
+                <li><a href="#">打篮球</a></li>
+                <li><a href="#">摩天轮</a></li>
+                <li><a href="#">斗地主</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="footer">
+    <div class="footer_ins">
+        <span>Copyright©2019 ZY.com 版权所有<a>京ICP证666666号</a></span>
+    </div>
+
+</div>
+
+
+</body>
+</html>

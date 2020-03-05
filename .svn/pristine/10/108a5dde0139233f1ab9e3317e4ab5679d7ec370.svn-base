@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Win10 Ui</title>
+    <link rel="stylesheet" href="/css/css.css">
+    <script src="/js/main.min.js"></script>
+</head>
+
+<body>
+    <div class="public_box">
+        <h1 class="title">
+            <strong>用户列表</strong>
+            <span>
+                <a class="button-normal button-add" th:href="@{/gouserCreate}">创建用户</a>
+            </span>
+        </h1>
+        <table class="table-default">
+            <tr>
+                <th width="140">用户ID</th>
+                <th width="100">用户账号</th>
+                <th width="90">密码</th>
+                <th width="80">用户名</th>
+                <th width="130">住址</th>
+                <th width="80">性别</th>
+                <th width="130">手机号码</th>
+                <th width="80">园龄</th>
+                <th width="80">积分</th>
+                <th width="80">创建时间</th>
+                <th width="140">会员编号</th>
+                <th width="80">到期日期</th>
+                <th width="130">操作</th>
+            </tr>
+            <tr th:each="user: ${users.list}" >
+                <td>
+                    <span th:text="${user.userid}"></span>
+                </td>
+                <td>
+                    <span th:text="${user.ucode}"></span>
+                </td>
+                <td>
+                    <span th:text="${user.pwd}"></span>
+                </td>
+                <td>
+                    <span th:text="${user.uname}"></span>
+                </td>
+                <td>
+                    <span th:text="${user.address}"></span>
+                </td>
+                <td>
+                    <span th:if="${user.gender==1}">男</span>
+                    <span th:if="${user.gender==2}">女</span>
+                </td>
+                <td>
+                    <span th:text="${user.phone}"></span>
+                </td>
+                <td>
+                    <span th:text="${user.birthday}"></span>
+                </td>
+                <td>
+                    <span th:text="${user.integral}"></span>
+                </td>
+                <td>
+                    <span th:text="${user.registerdate}"></span>
+                </td>
+                <td>
+                    <span th:text="${user.member.mid}"></span>
+                </td>
+                <td>
+                    <span th:text="${user.member.enddate}"></span>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <center class="zxf_pagediv t2">
+        <a id="pageHome" href="javaScript:void(0);">首页</a>&nbsp;&nbsp;
+        <a id="pageUp" href="javaScript:void(0);">上一页</a>&nbsp;&nbsp;
+        <span th:text="'当前'+${users.pageNum}+'页,共'+${users.pages}+'页,每页'+${users.pageSize}+'记录'"></span>&nbsp;&nbsp;
+        <a id="pageDn" href="javaScript:void(0);">下一页</a>&nbsp;&nbsp;
+        <a id="pageEnd" href="javaScript:void(0);">尾页</a>&nbsp;&nbsp;
+        <span>到第&nbsp;<input type="text" id="pageJumpVal" style="width: 30px;">&nbsp;页
+                <input id="pageJump" type="button" value="确定">
+		</span>
+        <input type="hidden" name="pageDnVal" th:value="${users.pages}">
+        <input type="hidden" id="pageNum" th:value="${users.pageNum}">
+    </center>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script>
+    $(function () {
+        var pageNum = $("#pageNum").val();
+        var pages = $("input[name=pageDnVal]").val();
+        $("#pageJump").click(function () {
+            var pageJumpVal = $("#pageJumpVal").val();
+            if (isNaN(parseInt(pageJumpVal))) {
+                alert("请输入正确的跳转页面");
+                return;
+            }
+            if (pageJumpVal < 1) {
+                pageJumpVal = 1;
+            }
+            if (pageJumpVal >pages) {
+                pageJumpVal =pages
+            };
+            window.location.href = '/gobackgroundUser?pageNum=' + pageJumpVal + '';
+        });
+
+        $("#pageUp").click(function () {
+            if (1 ==pageNum) {
+                alert("当前是第一页");
+                return;
+            } else {
+                window.location.href = '/gobackgroundUser?pageNum=' + (parseInt(pageNum)-1) + '';
+            }
+        });
+
+        $("#pageDn").click(function () {
+            if (pages ==pageNum||pages==0) {
+                alert("当前是最后一页");
+                return;
+            } else {
+                window.location.href = '/gobackgroundUser?pageNum=' + (parseInt(pageNum)+1) + '';
+            }
+        });
+
+        $("#pageHome").click(function () {
+            window.location.href = '/gobackgroundUser?pageNum=1';
+        });
+
+        $("#pageEnd").click(function () {
+
+            window.location.href = '/gobackgroundUser?pageNum=' + pages + '';
+        });
+    })
+</script>
+</html>

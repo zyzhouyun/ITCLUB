@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dream.itclub.dao.BlogMapper">
+  <resultMap id="BaseResultMap" type="com.dream.itclub.pojo.Blog">
+    <id column="BID" jdbcType="VARCHAR" property="bid" />
+    <result column="USERID" jdbcType="VARCHAR" property="userid" />
+    <result column="TYPEID" jdbcType="VARCHAR" property="typeid" />
+    <result column="BTITLE" jdbcType="VARCHAR" property="btitle" />
+    <result column="BPVNUM" jdbcType="DECIMAL" property="bpvnum" />
+    <result column="BGOODNUM" jdbcType="DECIMAL" property="bgoodnum" />
+    <result column="BPUBLISHTIME" jdbcType="TIMESTAMP" property="bpublishtime" />
+    <result column="BIMGPATH" jdbcType="VARCHAR" property="bimgpath" />
+    <result column="AUDITSTATUS" jdbcType="DECIMAL" property="auditstatus" />
+    <result column="INSTRUCTIONS" jdbcType="VARCHAR" property="instructions" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.dream.itclub.pojo.Blog">
+    <result column="BCONTENT" jdbcType="CLOB" property="bcontent" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    BID, USERID, TYPEID, BTITLE, BPVNUM, BGOODNUM, BPUBLISHTIME, BIMGPATH, AUDITSTATUS, 
+    INSTRUCTIONS
+  </sql>
+  <sql id="Blob_Column_List">
+    BCONTENT
+  </sql>
+  <select id="selectByExampleWithBLOBs" parameterType="com.dream.itclub.pojo.BlogExample" resultMap="ResultMapWithBLOBs">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from BLOG
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExample" parameterType="com.dream.itclub.pojo.BlogExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from BLOG
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from BLOG
+    where BID = #{bid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from BLOG
+    where BID = #{bid,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.dream.itclub.pojo.BlogExample">
+    delete from BLOG
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.dream.itclub.pojo.Blog">
+    insert into BLOG (BID, USERID, TYPEID, 
+      BTITLE, BPVNUM, BGOODNUM, 
+      BPUBLISHTIME, BIMGPATH, AUDITSTATUS, 
+      INSTRUCTIONS, BCONTENT)
+    values (#{bid,jdbcType=VARCHAR}, #{userid,jdbcType=VARCHAR}, #{typeid,jdbcType=VARCHAR}, 
+      #{btitle,jdbcType=VARCHAR}, #{bpvnum,jdbcType=DECIMAL}, #{bgoodnum,jdbcType=DECIMAL}, 
+      #{bpublishtime,jdbcType=TIMESTAMP}, #{bimgpath,jdbcType=VARCHAR}, #{auditstatus,jdbcType=DECIMAL}, 
+      #{instructions,jdbcType=VARCHAR}, #{bcontent,jdbcType=CLOB})
+  </insert>
+  <insert id="insertSelective" parameterType="com.dream.itclub.pojo.Blog">
+    insert into BLOG
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="bid != null">
+        BID,
+      </if>
+      <if test="userid != null">
+        USERID,
+      </if>
+      <if test="typeid != null">
+        TYPEID,
+      </if>
+      <if test="btitle != null">
+        BTITLE,
+      </if>
+      <if test="bpvnum != null">
+        BPVNUM,
+      </if>
+      <if test="bgoodnum != null">
+        BGOODNUM,
+      </if>
+      <if test="bpublishtime != null">
+        BPUBLISHTIME,
+      </if>
+      <if test="bimgpath != null">
+        BIMGPATH,
+      </if>
+      <if test="auditstatus != null">
+        AUDITSTATUS,
+      </if>
+      <if test="instructions != null">
+        INSTRUCTIONS,
+      </if>
+      <if test="bcontent != null">
+        BCONTENT,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="bid != null">
+        #{bid,jdbcType=VARCHAR},
+      </if>
+      <if test="userid != null">
+        #{userid,jdbcType=VARCHAR},
+      </if>
+      <if test="typeid != null">
+        #{typeid,jdbcType=VARCHAR},
+      </if>
+      <if test="btitle != null">
+        #{btitle,jdbcType=VARCHAR},
+      </if>
+      <if test="bpvnum != null">
+        #{bpvnum,jdbcType=DECIMAL},
+      </if>
+      <if test="bgoodnum != null">
+        #{bgoodnum,jdbcType=DECIMAL},
+      </if>
+      <if test="bpublishtime != null">
+        #{bpublishtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="bimgpath != null">
+        #{bimgpath,jdbcType=VARCHAR},
+      </if>
+      <if test="auditstatus != null">
+        #{auditstatus,jdbcType=DECIMAL},
+      </if>
+      <if test="instructions != null">
+        #{instructions,jdbcType=VARCHAR},
+      </if>
+      <if test="bcontent != null">
+        #{bcontent,jdbcType=CLOB},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.dream.itclub.pojo.BlogExample" resultType="java.lang.Long">
+    select count(*) from BLOG
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update BLOG
+    <set>
+      <if test="record.bid != null">
+        BID = #{record.bid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.userid != null">
+        USERID = #{record.userid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.typeid != null">
+        TYPEID = #{record.typeid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.btitle != null">
+        BTITLE = #{record.btitle,jdbcType=VARCHAR},
+      </if>
+      <if test="record.bpvnum != null">
+        BPVNUM = #{record.bpvnum,jdbcType=DECIMAL},
+      </if>
+      <if test="record.bgoodnum != null">
+        BGOODNUM = #{record.bgoodnum,jdbcType=DECIMAL},
+      </if>
+      <if test="record.bpublishtime != null">
+        BPUBLISHTIME = #{record.bpublishtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.bimgpath != null">
+        BIMGPATH = #{record.bimgpath,jdbcType=VARCHAR},
+      </if>
+      <if test="record.auditstatus != null">
+        AUDITSTATUS = #{record.auditstatus,jdbcType=DECIMAL},
+      </if>
+      <if test="record.instructions != null">
+        INSTRUCTIONS = #{record.instructions,jdbcType=VARCHAR},
+      </if>
+      <if test="record.bcontent != null">
+        BCONTENT = #{record.bcontent,jdbcType=CLOB},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExampleWithBLOBs" parameterType="map">
+    update BLOG
+    set BID = #{record.bid,jdbcType=VARCHAR},
+      USERID = #{record.userid,jdbcType=VARCHAR},
+      TYPEID = #{record.typeid,jdbcType=VARCHAR},
+      BTITLE = #{record.btitle,jdbcType=VARCHAR},
+      BPVNUM = #{record.bpvnum,jdbcType=DECIMAL},
+      BGOODNUM = #{record.bgoodnum,jdbcType=DECIMAL},
+      BPUBLISHTIME = #{record.bpublishtime,jdbcType=TIMESTAMP},
+      BIMGPATH = #{record.bimgpath,jdbcType=VARCHAR},
+      AUDITSTATUS = #{record.auditstatus,jdbcType=DECIMAL},
+      INSTRUCTIONS = #{record.instructions,jdbcType=VARCHAR},
+      BCONTENT = #{record.bcontent,jdbcType=CLOB}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update BLOG
+    set BID = #{record.bid,jdbcType=VARCHAR},
+      USERID = #{record.userid,jdbcType=VARCHAR},
+      TYPEID = #{record.typeid,jdbcType=VARCHAR},
+      BTITLE = #{record.btitle,jdbcType=VARCHAR},
+      BPVNUM = #{record.bpvnum,jdbcType=DECIMAL},
+      BGOODNUM = #{record.bgoodnum,jdbcType=DECIMAL},
+      BPUBLISHTIME = #{record.bpublishtime,jdbcType=TIMESTAMP},
+      BIMGPATH = #{record.bimgpath,jdbcType=VARCHAR},
+      AUDITSTATUS = #{record.auditstatus,jdbcType=DECIMAL},
+      INSTRUCTIONS = #{record.instructions,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dream.itclub.pojo.Blog">
+    update BLOG
+    <set>
+      <if test="userid != null">
+        USERID = #{userid,jdbcType=VARCHAR},
+      </if>
+      <if test="typeid != null">
+        TYPEID = #{typeid,jdbcType=VARCHAR},
+      </if>
+      <if test="btitle != null">
+        BTITLE = #{btitle,jdbcType=VARCHAR},
+      </if>
+      <if test="bpvnum != null">
+        BPVNUM = #{bpvnum,jdbcType=DECIMAL},
+      </if>
+      <if test="bgoodnum != null">
+        BGOODNUM = #{bgoodnum,jdbcType=DECIMAL},
+      </if>
+      <if test="bpublishtime != null">
+        BPUBLISHTIME = #{bpublishtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="bimgpath != null">
+        BIMGPATH = #{bimgpath,jdbcType=VARCHAR},
+      </if>
+      <if test="auditstatus != null">
+        AUDITSTATUS = #{auditstatus,jdbcType=DECIMAL},
+      </if>
+      <if test="instructions != null">
+        INSTRUCTIONS = #{instructions,jdbcType=VARCHAR},
+      </if>
+      <if test="bcontent != null">
+        BCONTENT = #{bcontent,jdbcType=CLOB},
+      </if>
+    </set>
+    where BID = #{bid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.dream.itclub.pojo.Blog">
+    update BLOG
+    set USERID = #{userid,jdbcType=VARCHAR},
+      TYPEID = #{typeid,jdbcType=VARCHAR},
+      BTITLE = #{btitle,jdbcType=VARCHAR},
+      BPVNUM = #{bpvnum,jdbcType=DECIMAL},
+      BGOODNUM = #{bgoodnum,jdbcType=DECIMAL},
+      BPUBLISHTIME = #{bpublishtime,jdbcType=TIMESTAMP},
+      BIMGPATH = #{bimgpath,jdbcType=VARCHAR},
+      AUDITSTATUS = #{auditstatus,jdbcType=DECIMAL},
+      INSTRUCTIONS = #{instructions,jdbcType=VARCHAR},
+      BCONTENT = #{bcontent,jdbcType=CLOB}
+    where BID = #{bid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dream.itclub.pojo.Blog">
+    update BLOG
+    set USERID = #{userid,jdbcType=VARCHAR},
+      TYPEID = #{typeid,jdbcType=VARCHAR},
+      BTITLE = #{btitle,jdbcType=VARCHAR},
+      BPVNUM = #{bpvnum,jdbcType=DECIMAL},
+      BGOODNUM = #{bgoodnum,jdbcType=DECIMAL},
+      BPUBLISHTIME = #{bpublishtime,jdbcType=TIMESTAMP},
+      BIMGPATH = #{bimgpath,jdbcType=VARCHAR},
+      AUDITSTATUS = #{auditstatus,jdbcType=DECIMAL},
+      INSTRUCTIONS = #{instructions,jdbcType=VARCHAR}
+    where BID = #{bid,jdbcType=VARCHAR}
+  </update>
+</mapper>

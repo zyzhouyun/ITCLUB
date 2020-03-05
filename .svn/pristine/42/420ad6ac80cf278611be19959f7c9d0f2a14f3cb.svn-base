@@ -1,0 +1,30 @@
+package com.dream.itclub.dao;
+
+import com.dream.itclub.pojo.RepCom;
+import com.dream.itclub.pojo.RepComExample;
+import java.util.List;
+import org.apache.ibatis.annotations.Param;
+
+public interface RepComMapper {
+    long countByExample(RepComExample example);
+
+    int deleteByExample(RepComExample example);
+
+    int deleteByPrimaryKey(String recomid);
+
+    int insert(RepCom record);
+
+    int insertSelective(RepCom record);
+
+    List<RepCom> selectByExample(RepComExample example);
+
+    RepCom selectByPrimaryKey(String recomid);
+
+    int updateByExampleSelective(@Param("record") RepCom record, @Param("example") RepComExample example);
+
+    int updateByExample(@Param("record") RepCom record, @Param("example") RepComExample example);
+
+    int updateByPrimaryKeySelective(RepCom record);
+
+    int updateByPrimaryKey(RepCom record);
+}

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dream.itclub.dao.RepComMapper">
+  <resultMap id="BaseResultMap" type="com.dream.itclub.pojo.RepCom">
+    <id column="RECOMID" jdbcType="VARCHAR" property="recomid" />
+    <result column="USERID" jdbcType="VARCHAR" property="userid" />
+    <result column="COMID" jdbcType="VARCHAR" property="comid" />
+    <result column="RECONTENT" jdbcType="VARCHAR" property="recontent" />
+    <result column="REGOODNUM" jdbcType="DECIMAL" property="regoodnum" />
+    <result column="RETIME" jdbcType="TIMESTAMP" property="retime" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    RECOMID, USERID, COMID, RECONTENT, REGOODNUM, RETIME
+  </sql>
+  <select id="selectByExample" parameterType="com.dream.itclub.pojo.RepComExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from REPCOM
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from REPCOM
+    where RECOMID = #{recomid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from REPCOM
+    where RECOMID = #{recomid,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.dream.itclub.pojo.RepComExample">
+    delete from REPCOM
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.dream.itclub.pojo.RepCom">
+    insert into REPCOM (RECOMID, USERID, COMID, 
+      RECONTENT, REGOODNUM, RETIME
+      )
+    values (#{recomid,jdbcType=VARCHAR}, #{userid,jdbcType=VARCHAR}, #{comid,jdbcType=VARCHAR}, 
+      #{recontent,jdbcType=VARCHAR}, #{regoodnum,jdbcType=DECIMAL}, #{retime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.dream.itclub.pojo.RepCom">
+    insert into REPCOM
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="recomid != null">
+        RECOMID,
+      </if>
+      <if test="userid != null">
+        USERID,
+      </if>
+      <if test="comid != null">
+        COMID,
+      </if>
+      <if test="recontent != null">
+        RECONTENT,
+      </if>
+      <if test="regoodnum != null">
+        REGOODNUM,
+      </if>
+      <if test="retime != null">
+        RETIME,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="recomid != null">
+        #{recomid,jdbcType=VARCHAR},
+      </if>
+      <if test="userid != null">
+        #{userid,jdbcType=VARCHAR},
+      </if>
+      <if test="comid != null">
+        #{comid,jdbcType=VARCHAR},
+      </if>
+      <if test="recontent != null">
+        #{recontent,jdbcType=VARCHAR},
+      </if>
+      <if test="regoodnum != null">
+        #{regoodnum,jdbcType=DECIMAL},
+      </if>
+      <if test="retime != null">
+        #{retime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.dream.itclub.pojo.RepComExample" resultType="java.lang.Long">
+    select count(*) from REPCOM
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update REPCOM
+    <set>
+      <if test="record.recomid != null">
+        RECOMID = #{record.recomid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.userid != null">
+        USERID = #{record.userid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.comid != null">
+        COMID = #{record.comid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.recontent != null">
+        RECONTENT = #{record.recontent,jdbcType=VARCHAR},
+      </if>
+      <if test="record.regoodnum != null">
+        REGOODNUM = #{record.regoodnum,jdbcType=DECIMAL},
+      </if>
+      <if test="record.retime != null">
+        RETIME = #{record.retime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update REPCOM
+    set RECOMID = #{record.recomid,jdbcType=VARCHAR},
+      USERID = #{record.userid,jdbcType=VARCHAR},
+      COMID = #{record.comid,jdbcType=VARCHAR},
+      RECONTENT = #{record.recontent,jdbcType=VARCHAR},
+      REGOODNUM = #{record.regoodnum,jdbcType=DECIMAL},
+      RETIME = #{record.retime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dream.itclub.pojo.RepCom">
+    update REPCOM
+    <set>
+      <if test="userid != null">
+        USERID = #{userid,jdbcType=VARCHAR},
+      </if>
+      <if test="comid != null">
+        COMID = #{comid,jdbcType=VARCHAR},
+      </if>
+      <if test="recontent != null">
+        RECONTENT = #{recontent,jdbcType=VARCHAR},
+      </if>
+      <if test="regoodnum != null">
+        REGOODNUM = #{regoodnum,jdbcType=DECIMAL},
+      </if>
+      <if test="retime != null">
+        RETIME = #{retime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where RECOMID = #{recomid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dream.itclub.pojo.RepCom">
+    update REPCOM
+    set USERID = #{userid,jdbcType=VARCHAR},
+      COMID = #{comid,jdbcType=VARCHAR},
+      RECONTENT = #{recontent,jdbcType=VARCHAR},
+      REGOODNUM = #{regoodnum,jdbcType=DECIMAL},
+      RETIME = #{retime,jdbcType=TIMESTAMP}
+    where RECOMID = #{recomid,jdbcType=VARCHAR}
+  </update>
+</mapper>

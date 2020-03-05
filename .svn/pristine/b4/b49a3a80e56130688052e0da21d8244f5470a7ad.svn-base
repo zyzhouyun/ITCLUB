@@ -1,0 +1,74 @@
+package com.dream.itclub.handler;
+
+import com.dream.itclub.pojo.Message;
+import com.dream.itclub.pojo.SysUser;
+import com.dream.itclub.pojo.custom.CustomMessage;
+import com.dream.itclub.pojo.custom.CustomRepMessage;
+import com.dream.itclub.service.ICustomMessageService;
+import com.dream.itclub.service.ICustomRepMessageService;
+import com.dream.itclub.utils.VO;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.annotation.Resource;
+import java.util.List;
+
+@Controller
+public class MessageHandler {
+    @Resource
+    private ICustomMessageService messageService;
+
+    @Resource
+    private ICustomRepMessageService repMessageService;
+
+
+    @RequestMapping("/findMessage")
+    public String findMessage(Model model,String id){
+        List<CustomMessage> message = null;
+        try {
+            //查询留言
+            message = messageService.findMessage("c9f5400076474e93a91ef8baf7de3117");
+            for(CustomMessage customMessage: message){
+                //获取留言用户姓名
+                SysUser user = messageService.findUser(customMessage.getMessageuser());
+                customMessage.setMessageUserName(user.getUname());
+
+                //获取每条留言下的回复
+                List<CustomRepMessage> repMessage = repMessageService.findRepMessage(customMessage.getMsgid());
+                if(repMessage.size()!=0){
+                    //循环获取每个回复留言的用户姓名
+                    for(CustomRepMessage customRepMessage:repMessage){
+                        SysUser Ruser = messageService.findUser(customRepMessage.getRemessageuser());
+                        customRepMessage.setRepMessageUserName(Ruser.getUname());
+                        System.err.println(Ruser.getUname());
+                    }
+                    customMessage.setCustomRepMessage(repMessage);
+                }
+            }
+            model.addAttribute("messageList",message);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "message";
+    }
+
+    @ResponseBody
+    @RequestMapping("/addMessage")
+    public Object addMessage(Message message){
+        VO vo = new VO();
+        try {
+            String s = messageService.addMessage(message);
+            if(!s.equals("0")){
+                CustomMessage messageByMsgId = messageService.findMessageByMsgId(s);
+                SysUser user = messageService.findUser(messageByMsgId.getMessageuser());
+                messageByMsgId.setMessageUserName(user.getUname());
+                vo.setData(messageByMsgId);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return vo;
+    }
+}

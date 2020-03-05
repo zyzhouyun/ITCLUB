@@ -1,0 +1,57 @@
+package com.dream.itclub.handler;
+
+import com.dream.itclub.pojo.SysUser;
+import com.dream.itclub.service.SysUserService;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.annotation.Resource;
+import javax.security.auth.login.LoginException;
+import javax.servlet.http.HttpSession;
+
+import static java.lang.System.out;
+
+@Controller
+public class SysUserHandler extends BaseController {
+    @Resource
+    private SysUserService userService;
+
+    @RequestMapping(value = "/goUpdatePwd")
+    public String goUpdatePwd(){return "password";}
+
+    @RequestMapping(value = "/gozhuce")
+    public String gozhuce(){return "zhuce";}
+
+    @RequestMapping(value = "/gozhuce1")
+    public String gozhuce1(){return "zhuce1";}
+
+    @RequestMapping(value ="/doLogin")
+    public String doLogin(SysUser user, HttpSession session) throws LoginException {
+        SysUser user1 = null;
+        try {
+            user1= userService.selectUser(user);
+            session.setAttribute("login", user1);
+            if (user1.getUrole()==1){
+                return "admin";
+            }else {
+                return "article";
+            }
+        } catch (Exception e) {
+            throw new LoginException("手机号或密码错误!");
+        }
+    }
+
+    @RequestMapping(value ="/selectByPhone")
+    public Object selectByPhone(String phone, HttpSession session) throws Exception {
+        SysUser sysUser = userService.selectByPhone(phone);
+        if (sysUser!=null){
+            //提示注册过，跳转到找回密码页面
+            out.println("alert('" + 123 + "')");
+            return"";
+        }else {
+            //没有查询到此电话，则可以注册
+            session.setAttribute("phone", phone);
+            return"zhuce1";
+        }
+    }
+}

@@ -1,0 +1,271 @@
+2019-12-26 14:42:33.889  INFO 13656 --- [main] com.dream.itclub.ItclubApplication       : Starting ItclubApplication on DESKTOP-QNVVKMQ with PID 13656 (D:\ideapj\itclub\target\classes started by hr in D:\ideapj\itclub)
+2019-12-26 14:42:33.965  INFO 13656 --- [main] com.dream.itclub.ItclubApplication       : No active profile set, falling back to default profiles: default
+2019-12-26 14:42:35.833  WARN 13656 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.dream.itclub.dao]' package. Please check your configuration.
+2019-12-26 14:42:38.018  INFO 13656 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-26 14:42:38.067  INFO 13656 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-26 14:42:38.067  INFO 13656 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-26 14:42:38.382  INFO 13656 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-26 14:42:38.382  INFO 13656 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4057 ms
+2019-12-26 14:42:40.511  INFO 13656 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-26 14:42:40.687  INFO 13656 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-26 14:42:41.444  INFO 13656 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-26 14:42:41.447  INFO 13656 --- [main] com.dream.itclub.ItclubApplication       : Started ItclubApplication in 8.419 seconds (JVM running for 15.43)
+2019-12-26 14:43:16.196  INFO 13656 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-26 14:43:16.197  INFO 13656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-26 14:43:16.210  INFO 13656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-12-26 14:49:28.506  INFO 2124 --- [main] com.dream.itclub.ItclubApplication       : Starting ItclubApplication on DESKTOP-QNVVKMQ with PID 2124 (D:\ideapj\itclub\target\classes started by hr in D:\ideapj\itclub)
+2019-12-26 14:49:28.513  INFO 2124 --- [main] com.dream.itclub.ItclubApplication       : No active profile set, falling back to default profiles: default
+2019-12-26 14:49:29.526  WARN 2124 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.dream.itclub.dao]' package. Please check your configuration.
+2019-12-26 14:49:30.144  INFO 2124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-26 14:49:30.158  INFO 2124 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-26 14:49:30.159  INFO 2124 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-26 14:49:30.276  INFO 2124 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-26 14:49:30.277  INFO 2124 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1650 ms
+2019-12-26 14:49:30.538  INFO 2124 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-26 14:49:30.625  INFO 2124 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-26 14:49:31.157  INFO 2124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-26 14:49:31.159  INFO 2124 --- [main] com.dream.itclub.ItclubApplication       : Started ItclubApplication in 3.673 seconds (JVM running for 5.42)
+2019-12-26 14:49:40.782  INFO 2124 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-26 14:49:40.791  INFO 2124 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-26 14:49:40.851  INFO 2124 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 59 ms
+2019-12-26 14:59:07.861  INFO 15276 --- [main] com.dream.itclub.ItclubApplication       : Starting ItclubApplication on DESKTOP-QNVVKMQ with PID 15276 (D:\ideapj\itclub\target\classes started by hr in D:\ideapj\itclub)
+2019-12-26 14:59:07.867  INFO 15276 --- [main] com.dream.itclub.ItclubApplication       : No active profile set, falling back to default profiles: default
+2019-12-26 14:59:09.125  WARN 15276 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.dream.itclub.dao]' package. Please check your configuration.
+2019-12-26 14:59:09.751  INFO 15276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-26 14:59:09.764  INFO 15276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-26 14:59:09.765  INFO 15276 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-26 14:59:09.898  INFO 15276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-26 14:59:09.904  INFO 15276 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1921 ms
+2019-12-26 14:59:10.162  INFO 15276 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-26 14:59:10.261  INFO 15276 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-26 14:59:10.827  INFO 15276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-26 14:59:10.833  INFO 15276 --- [main] com.dream.itclub.ItclubApplication       : Started ItclubApplication in 3.852 seconds (JVM running for 5.638)
+2019-12-26 14:59:24.658  INFO 15276 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-26 14:59:24.658  INFO 15276 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-26 14:59:24.676  INFO 15276 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-12-26 15:03:45.936  INFO 6848 --- [main] com.dream.itclub.ItclubApplication       : Starting ItclubApplication on DESKTOP-QNVVKMQ with PID 6848 (D:\ideapj\itclub\target\classes started by hr in D:\ideapj\itclub)
+2019-12-26 15:03:45.942  INFO 6848 --- [main] com.dream.itclub.ItclubApplication       : No active profile set, falling back to default profiles: default
+2019-12-26 15:03:47.314  WARN 6848 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.dream.itclub.dao]' package. Please check your configuration.
+2019-12-26 15:03:48.489  INFO 6848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-26 15:03:48.503  INFO 6848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-26 15:03:48.504  INFO 6848 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-26 15:03:48.818  INFO 6848 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-26 15:03:48.818  INFO 6848 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2749 ms
+2019-12-26 15:03:49.065  INFO 6848 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-26 15:03:49.232  INFO 6848 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-26 15:03:50.014  INFO 6848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-26 15:03:50.020  INFO 6848 --- [main] com.dream.itclub.ItclubApplication       : Started ItclubApplication in 5.79 seconds (JVM running for 7.886)
+2019-12-26 15:04:21.771  INFO 6848 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-26 15:04:21.771  INFO 6848 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-26 15:04:21.784  INFO 6848 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-12-26 15:07:53.661  INFO 2328 --- [main] com.dream.itclub.ItclubApplication       : Starting ItclubApplication on DESKTOP-QNVVKMQ with PID 2328 (D:\ideapj\itclub\target\classes started by hr in D:\ideapj\itclub)
+2019-12-26 15:07:53.668  INFO 2328 --- [main] com.dream.itclub.ItclubApplication       : No active profile set, falling back to default profiles: default
+2019-12-26 15:07:54.782  WARN 2328 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.dream.itclub.dao]' package. Please check your configuration.
+2019-12-26 15:07:55.404  INFO 2328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-26 15:07:55.414  INFO 2328 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-26 15:07:55.414  INFO 2328 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-26 15:07:55.537  INFO 2328 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-26 15:07:55.537  INFO 2328 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1756 ms
+2019-12-26 15:07:55.784  INFO 2328 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-26 15:07:55.863  INFO 2328 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-26 15:07:56.448  INFO 2328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-26 15:07:56.456  INFO 2328 --- [main] com.dream.itclub.ItclubApplication       : Started ItclubApplication in 3.66 seconds (JVM running for 5.323)
+2019-12-26 15:08:08.887  INFO 2328 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-26 15:08:08.887  INFO 2328 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-26 15:08:08.900  INFO 2328 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-12-26 15:09:44.775  INFO 5576 --- [main] com.dream.itclub.ItclubApplication       : Starting ItclubApplication on DESKTOP-QNVVKMQ with PID 5576 (D:\ideapj\itclub\target\classes started by hr in D:\ideapj\itclub)
+2019-12-26 15:09:44.796  INFO 5576 --- [main] com.dream.itclub.ItclubApplication       : No active profile set, falling back to default profiles: default
+2019-12-26 15:09:45.998  WARN 5576 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.dream.itclub.dao]' package. Please check your configuration.
+2019-12-26 15:09:46.669  INFO 5576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-26 15:09:46.687  INFO 5576 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-26 15:09:46.688  INFO 5576 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-26 15:09:46.825  INFO 5576 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-26 15:09:46.826  INFO 5576 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1848 ms
+2019-12-26 15:09:47.068  INFO 5576 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-26 15:09:47.159  INFO 5576 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-26 15:09:47.689  INFO 5576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-26 15:09:47.690  INFO 5576 --- [main] com.dream.itclub.ItclubApplication       : Started ItclubApplication in 3.685 seconds (JVM running for 5.068)
+2019-12-26 15:10:12.331  INFO 5576 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-26 15:10:12.331  INFO 5576 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-26 15:10:12.340  INFO 5576 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-12-26 15:20:33.092  INFO 14780 --- [main] com.dream.itclub.ItclubApplication       : Starting ItclubApplication on DESKTOP-QNVVKMQ with PID 14780 (D:\ideapj\itclub\target\classes started by hr in D:\ideapj\itclub)
+2019-12-26 15:20:33.098  INFO 14780 --- [main] com.dream.itclub.ItclubApplication       : No active profile set, falling back to default profiles: default
+2019-12-26 15:20:34.357  WARN 14780 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.dream.itclub.dao]' package. Please check your configuration.
+2019-12-26 15:20:35.351  INFO 14780 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-26 15:20:35.366  INFO 14780 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-26 15:20:35.367  INFO 14780 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-26 15:20:35.513  INFO 14780 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-26 15:20:35.513  INFO 14780 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2307 ms
+2019-12-26 15:20:35.779  INFO 14780 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-26 15:20:35.868  INFO 14780 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-26 15:20:36.480  INFO 14780 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-26 15:20:36.493  INFO 14780 --- [main] com.dream.itclub.ItclubApplication       : Started ItclubApplication in 4.175 seconds (JVM running for 6.066)
+2019-12-26 15:21:05.129  INFO 14780 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-26 15:21:05.129  INFO 14780 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-26 15:21:05.145  INFO 14780 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2019-12-26 15:22:14.001  INFO 16396 --- [main] com.dream.itclub.ItclubApplication       : Starting ItclubApplication on DESKTOP-QNVVKMQ with PID 16396 (D:\ideapj\itclub\target\classes started by hr in D:\ideapj\itclub)
+2019-12-26 15:22:14.007  INFO 16396 --- [main] com.dream.itclub.ItclubApplication       : No active profile set, falling back to default profiles: default
+2019-12-26 15:22:15.092  WARN 16396 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.dream.itclub.dao]' package. Please check your configuration.
+2019-12-26 15:22:15.669  INFO 16396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-26 15:22:15.681  INFO 16396 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-26 15:22:15.682  INFO 16396 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-26 15:22:15.799  INFO 16396 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-26 15:22:15.803  INFO 16396 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1621 ms
+2019-12-26 15:22:16.036  INFO 16396 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-26 15:22:16.097  INFO 16396 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-26 15:22:16.465  INFO 16396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-26 15:22:16.469  INFO 16396 --- [main] com.dream.itclub.ItclubApplication       : Started ItclubApplication in 3.327 seconds (JVM running for 4.736)
+2019-12-26 15:22:33.498  INFO 16396 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-26 15:22:33.498  INFO 16396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-26 15:22:33.509  INFO 16396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-12-26 15:23:06.722  WARN 16396 --- [http-nio-8080-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Path represents URL or has "url:" prefix: [https:/cdn.bootcss.com/jquery/3.3.1/jquery.min.js]
+2019-12-26 15:23:06.992  WARN 16396 --- [http-nio-8080-exec-10] o.s.w.s.r.ResourceHttpRequestHandler     : Path represents URL or has "url:" prefix: [https:/cdn.bootcss.com/jquery/3.3.1/jquery.min.js]
+2019-12-26 15:24:46.910  INFO 5584 --- [main] com.dream.itclub.ItclubApplication       : Starting ItclubApplication on DESKTOP-QNVVKMQ with PID 5584 (D:\ideapj\itclub\target\classes started by hr in D:\ideapj\itclub)
+2019-12-26 15:24:46.916  INFO 5584 --- [main] com.dream.itclub.ItclubApplication       : No active profile set, falling back to default profiles: default
+2019-12-26 15:24:48.177  WARN 5584 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.dream.itclub.dao]' package. Please check your configuration.
+2019-12-26 15:24:49.418  INFO 5584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-26 15:24:49.444  INFO 5584 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-26 15:24:49.445  INFO 5584 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-26 15:24:49.694  INFO 5584 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-26 15:24:49.696  INFO 5584 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2647 ms
+2019-12-26 15:24:50.844  INFO 5584 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-26 15:24:50.972  INFO 5584 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-26 15:24:51.761  INFO 5584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-26 15:24:51.767  INFO 5584 --- [main] com.dream.itclub.ItclubApplication       : Started ItclubApplication in 5.581 seconds (JVM running for 7.555)
+2019-12-26 15:25:13.583  INFO 5584 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-26 15:25:13.583  INFO 5584 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-26 15:25:13.599  INFO 5584 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-12-26 15:25:21.050 ERROR 5584 --- [http-nio-8080-exec-3] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-3] Exception processing template "/": Error resolving template [/], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) [thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) [thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362) [thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189) [thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373) [spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118) [spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057) [spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) [spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+
+2019-12-26 15:25:21.053 ERROR 5584 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+
+2019-12-26 15:26:28.173  INFO 11808 --- [main] com.dream.itclub.ItclubApplication       : Starting ItclubApplication on DESKTOP-QNVVKMQ with PID 11808 (D:\ideapj\itclub\target\classes started by hr in D:\ideapj\itclub)
+2019-12-26 15:26:28.181  INFO 11808 --- [main] com.dream.itclub.ItclubApplication       : No active profile set, falling back to default profiles: default
+2019-12-26 15:26:30.931  WARN 11808 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.dream.itclub.dao]' package. Please check your configuration.
+2019-12-26 15:26:31.632  INFO 11808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-26 15:26:31.646  INFO 11808 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-26 15:26:31.647  INFO 11808 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-26 15:26:31.779  INFO 11808 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-26 15:26:31.781  INFO 11808 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3406 ms
+2019-12-26 15:26:32.148  INFO 11808 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-26 15:26:32.367  INFO 11808 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-26 15:26:33.109  INFO 11808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-26 15:26:33.117  INFO 11808 --- [main] com.dream.itclub.ItclubApplication       : Started ItclubApplication in 5.802 seconds (JVM running for 7.515)
+2019-12-26 15:26:37.660  INFO 11808 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-26 15:26:37.661  INFO 11808 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-26 15:26:37.678  INFO 11808 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2019-12-26 15:28:28.625  INFO 12968 --- [main] com.dream.itclub.ItclubApplication       : Starting ItclubApplication on DESKTOP-QNVVKMQ with PID 12968 (D:\ideapj\itclub\target\classes started by hr in D:\ideapj\itclub)
+2019-12-26 15:28:28.631  INFO 12968 --- [main] com.dream.itclub.ItclubApplication       : No active profile set, falling back to default profiles: default
+2019-12-26 15:28:30.261  WARN 12968 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.dream.itclub.dao]' package. Please check your configuration.
+2019-12-26 15:28:31.054  INFO 12968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-26 15:28:31.075  INFO 12968 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-26 15:28:31.076  INFO 12968 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-26 15:28:31.248  INFO 12968 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-26 15:28:31.248  INFO 12968 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2410 ms
+2019-12-26 15:28:31.589  INFO 12968 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-26 15:28:31.713  INFO 12968 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-26 15:28:32.290  INFO 12968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-26 15:28:32.294  INFO 12968 --- [main] com.dream.itclub.ItclubApplication       : Started ItclubApplication in 4.656 seconds (JVM running for 6.689)
+2019-12-26 15:28:39.759  INFO 12968 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-26 15:28:39.759  INFO 12968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-26 15:28:39.772  INFO 12968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms

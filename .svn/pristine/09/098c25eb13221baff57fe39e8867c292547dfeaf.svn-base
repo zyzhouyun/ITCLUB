@@ -1,0 +1,58 @@
+package com.dream.itclub.handler;
+
+import com.alipay.api.AlipayApiException;
+import com.alipay.api.AlipayClient;
+import com.alipay.api.DefaultAlipayClient;
+import com.alipay.api.request.AlipayTradePagePayRequest;
+import com.dream.itclub.utils.AlipayConfig;
+import com.dream.itclub.utils.UUIDUtil;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+@RequestMapping("alipay")
+@Controller
+public class AliPayHandler {
+
+    @RequestMapping(value = "/buyMember")
+    public void buyMember(Integer price, HttpServletResponse response) throws IOException {
+        //订单号
+        String memberid = UUIDUtil.createUUID();
+
+        String memberName ="VIP";
+
+
+        AlipayClient alipayClient = new DefaultAlipayClient(AlipayConfig.gatewayUrl, AlipayConfig.app_id, AlipayConfig.merchant_private_key, "json", AlipayConfig.charset, AlipayConfig.alipay_public_key, AlipayConfig.sign_type);
+
+        //设置请求参数
+        AlipayTradePagePayRequest alipayRequest = new AlipayTradePagePayRequest();
+        alipayRequest.setReturnUrl(AlipayConfig.return_url);
+        alipayRequest.setNotifyUrl(AlipayConfig.notify_url);
+
+        //商户订单号
+        String out_trade_no = new String(memberid.getBytes("ISO-8859-1"),"UTF-8");
+        //付款金额
+        String total_amount = new String((price+"").getBytes("ISO-8859-1"),"UTF-8");
+        //订单名称
+        String subject = new String(memberName.getBytes("ISO-8859-1"),"UTF-8");
+        //商品描述
+        String body = new String(memberName.getBytes("ISO-8859-1"),"UTF-8");
+
+        alipayRequest.setBizContent("{\"out_trade_no\":\""+ out_trade_no +"\","
+                + "\"total_amount\":\""+ total_amount +"\","
+                + "\"subject\":\""+ subject +"\","
+                + "\"body\":\""+ body +"\","
+                + "\"product_code\":\"FAST_INSTANT_TRADE_PAY\"}");
+
+        String result = null;
+        try {
+            result = alipayClient.pageExecute(alipayRequest).getBody();
+        } catch (AlipayApiException e) {
+            e.printStackTrace();
+        }
+        response.getWriter().write(result);
+    }
+
+}

@@ -1,0 +1,30 @@
+package com.dream.itclub.handler;
+
+import com.dream.itclub.pojo.SysUser;
+import com.dream.itclub.service.SysUserService;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.annotation.Resource;
+import javax.security.auth.login.LoginException;
+import javax.servlet.http.HttpSession;
+
+@Controller
+public class SysUserHandler extends BaseController {
+    @Resource
+    private SysUserService userService;
+    @RequestMapping(value = "/goUpdatePwd")
+    public String goUpdatePwd(){return "password";}
+
+    @RequestMapping(value ="/doLogin")
+    public String doLogin(SysUser user, HttpSession session) throws LoginException {
+        SysUser user1 = null;
+        try {
+            user1= userService.selectUser(user);
+            session.setAttribute("login", user1);
+            return "article";
+        } catch (Exception e) {
+            throw new LoginException("手机号或密码错误!");
+        }
+    }
+}

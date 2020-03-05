@@ -1,0 +1,11 @@
+package com.dream.itclub.service;
+
+import com.dream.itclub.pojo.Member;
+
+/**
+ * 会员服务
+ */
+public interface IMemberService {
+
+    public void add(Member member,String userId)throws Exception;
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dream.itclub.dao.custom.CustomBlogMapper">
+
+
+
+
+    <resultMap id="customBlogMap" type="com.dream.itclub.pojo.custom.CustomBlog">
+        <id column="BID" jdbcType="VARCHAR" property="bid" />
+        <association property="sysUser" javaType="com.dream.itclub.pojo.SysUser">
+            <id column="USERID" jdbcType="VARCHAR" property="userid" />
+        </association>
+        <association property="blogType" javaType="com.dream.itclub.pojo.BlogType">
+            <id property="typeid" column="TYPEID"></id>
+        </association>
+    </resultMap>
+
+<!--查询博客（用户，类型）
+条件：根据 博客编号 标题 用户名 博客类型 ； 浏览数倒序
+
+-->
+
+    <sql id="blogColumn">
+        b.BID,b.BTITLE,b.BCONTENT,b.BPVNUM,b.BGOODNUM,b.BPUBLISHTIME,b.BIMGPATH, b.AUDITSTATUS, b.INSTRUCTIONS,
+    </sql>
+
+    <sql id="userColumn">
+        u.USERID, u.MID, u.UCODE, u.PWD, u.UNAME,
+    </sql>
+
+    <sql id="typeColum">
+        t.TYPEID, t.TYPENAME
+    </sql>
+
+    <select id="findCustomBlog" resultMap="customBlogMap" parameterType="com.dream.itclub.pojo.custom.CustomBlog">
+
+        SELECT
+        <include refid="blogColumn"></include>
+        <include refid="userColumn"></include>
+        <include refid="typeColum"></include>
+
+        FROM BLOG b,SYSUSER u,BLOGTYPE t
+        WHERE b.USERID = u.USERID and b.TYPEID = t.TYPEID
+
+        <if test="bid!=null and bid!=''">
+            AND b.BID = #{bid}
+        </if>
+
+        <if test="btitle!=null and btitle!=''">
+            AND b.BTITLE LIKE #{btitle}
+        </if>
+
+        <if test="sysUser!=null">
+            <if test="sysUser.uname!=null and sysUser.uname!=''">
+                AND u.UNAME LIKE #{sysUser.uname}
+            </if>
+        </if>
+
+        <if test="blogType!=null">
+            <if test="blogType.typeid!=null and blogType.typeid!=''">
+                AND t.TYPEID = #{blogType.typeid}
+            </if>
+        </if>
+
+        ORDER BY b.bpvnum DESC
+     </select>
+
+
+
+
+
+
+</mapper>

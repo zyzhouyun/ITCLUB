@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Win10 Ui</title>
+    <link rel="stylesheet" href="/css/css.css">
+</head>
+
+<body>
+    <div class="public_box">
+        <h1 class="title">
+            <strong>新增博客类型</strong>
+            <span>
+                <a class="button-normal button-search" th:href="@{/gotype}">博客类型管理</a>
+            </span>
+        </h1>
+        <div class="tabBox">
+            <div class="tabBody mb10">
+                <div class="bodyLi bodyActive">
+                    <div class="win-input mb10">
+                        <span class="input-name">博客类型名</span>
+                        <input type="text" class="text-full" placeholder="请输入">
+                    </div>
+                </div>
+            </div>
+            <div class="actionBtnGroup">
+                <button class="button-normal button-add">保存</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
